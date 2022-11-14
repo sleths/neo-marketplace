@@ -1,9 +1,7 @@
+import MarketplaceRoutes from "./components/MarketplaceRoutes";
+
 function App() {
-  return (
-    <div className="App">
-      hi
-    </div>
-  );
+  return <MarketplaceRoutes />;
 }
 
 export default App;
