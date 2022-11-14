@@ -11,3 +11,21 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
