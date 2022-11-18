@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import DensitySmallIcon from "@mui/icons-material/DensitySmall";
 import CloseIcon from "@mui/icons-material/Close";
 import styles from "./styles.module.scss";
@@ -46,7 +46,12 @@ const Navbar = () => {
         </li>
         {links.map((link, index) => (
           <li key={index} onClick={close}>
-            <Link to={link.link}>{link.text}</Link>
+            <NavLink
+              to={link.link}
+              className={({ isActive }) => (isActive ? styles.activeLink : "")}
+            >
+              {link.text}
+            </NavLink>
           </li>
         ))}
       </ul>

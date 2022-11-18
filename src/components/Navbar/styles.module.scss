@@ -1,6 +1,8 @@
 .nav {
   padding: 24px;
   justify-content: space-between;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
 .navLinks {
@@ -15,6 +17,20 @@
   justify-content: center;
   width: 0;
   opacity: 0;
+  transition: width 0.3s ease-in, opacity 0.2s ease-in;
+
+  & li a {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #5d5d5b;
+    letter-spacing: 2px;
+  }
+
+  & .activeLink {
+    font-weight: 600;
+    color: black;
+  }
 }
 
 .navLinks.visible {
@@ -31,4 +47,26 @@
 
 .closeIcon.visible {
   pointer-events: all;
+}
+
+@media screen and (min-width: 758px) {
+  .nav > svg,
+  .nav li svg {
+    display: none;
+  }
+
+  .nav ul {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    opacity: 1;
+    padding: 0;
+    gap: 1.5rem;
+
+    & li a {
+      font-size: 0.9rem;
+      text-transform: capitalize;
+    }
+  }
 }
