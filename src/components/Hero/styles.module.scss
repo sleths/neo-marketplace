@@ -5,25 +5,37 @@
   height: calc(100vh - 96px);
   background-size: cover;
   background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 24px;
-  gap: 24px;
+
+  & article {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 24px;
+    gap: 24px;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
 
   & h1 {
     font-size: 2.625rem;
   }
 
   & p {
-    line-height: 24px;
+    line-height: 1.75;
+    max-width: 500px;
+  }
+
+  & h1, .inputContainer {
+    max-width: 550px;
   }
 }
 
 .inputContainer {
   position: relative;
   width: 100%;
+  margin-top: 1rem;
 
   & label,
   button {
@@ -73,6 +85,18 @@
     & svg {
       width: 18px;
       color: white;
+    }
+  }
+}
+
+@media screen and (min-width: 758px) {
+  .hero article {
+    text-align: left;
+    align-items: flex-start;
+
+    & h1 {
+      font-size: 2.8rem;
+      line-height: 1.25;
     }
   }
 }
