@@ -21,11 +21,18 @@ ol {
   list-style: none;
 }
 
+input,
+button {
+  border: none;
+  outline: none;
+}
+
 .center {
   display: flex;
   align-items: center;
 }
 
+button,
 .pointer {
   cursor: pointer;
 }
