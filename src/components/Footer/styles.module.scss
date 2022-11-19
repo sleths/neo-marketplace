@@ -1,0 +1,160 @@
+.footer {
+  background-color: var(--light-gray);
+  padding: 24px;
+  text-align: center;
+
+  & .wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  & .wrapper,
+  .container,
+  .firstGrid,
+  .emailContainer,
+  .pageLinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  & .emailContainer,
+  .pageLinks,
+  .hideMobile {
+    display: none;
+  }
+
+  & .textContainer {
+    order: 0;
+    max-width: 320px;
+
+    & p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--dark-gray);
+      margin: 1rem 0;
+    }
+  }
+
+  & .firstGrid {
+    order: 1;
+  }
+}
+
+.iconContainer {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.icons {
+  gap: 2rem;
+
+  & svg {
+    transition: transform 0.3s ease;
+    width: 1rem;
+  }
+
+  & svg:hover {
+    transform: scale(1.2);
+  }
+}
+
+.bottom {
+  justify-content: space-between;
+  margin-top: 3rem;
+  position: relative;
+  padding-top: 0.5rem;
+  width: 100%;
+
+  &::before {
+    content: "";
+    width: calc(100% + 48px);
+    height: 1px;
+    background-color: var(--med-gray);
+    position: absolute;
+    top: -1rem;
+    left: -24px;
+  }
+
+  & a {
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+  }
+}
+
+.bottomLink:not(:first-of-type) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 5rem;
+    text-align: left;
+    & .container {
+      flex-direction: row;
+      padding-bottom: 3rem;
+      width: 100%;
+      justify-content: space-between;
+    }
+    & .emailContainer,
+    .pageLinks {
+      display: flex;
+    }
+    .hideMobile {
+      display: block;
+    }
+    .firstGrid {
+      order: 0;
+      justify-content: space-between;
+      gap: 4rem;
+    }
+
+    .emailContainer div {
+      position: relative;
+      margin-top: 1rem;
+
+      & input {
+        width: 100%;
+        border: 1px solid var(--med-gray);
+        border-radius: 24px;
+        background-color: transparent;
+        width: 300px;
+        height: 48px;
+        padding-left: 12px;
+      }
+
+      & label,
+      svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      & label {
+        left: 12px;
+        transition: opacity 0.2s ease;
+      }
+
+      & .empty {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      & .full {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      & svg {
+        right: 18px;
+        fill: var(--dark-gray);
+      }
+    }
+  }
+}
