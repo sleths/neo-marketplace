@@ -4,7 +4,7 @@ import { top_sellers } from "../../data";
 const TopSellerContainer = ({ seller }) => {
   return (
     <section className={`center ${styles.col}`}>
-      <p>{seller.id}</p>
+      <p className={styles.sellerID}>{seller.id}</p>
       <img src={seller.img} alt={seller.name} />
       <article>
         <h3>{seller.name}</h3>

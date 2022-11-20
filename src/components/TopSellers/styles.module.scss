@@ -5,7 +5,7 @@
     font-size: 24px;
     line-height: 1.5;
     font-weight: 800;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 }
 
@@ -26,6 +26,12 @@
   & article p,
   .percent {
     font-size: 14px;
+  }
+
+  & .sellerID {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
   }
 }
 
