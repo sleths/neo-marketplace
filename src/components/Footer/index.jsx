@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PublicIcon from "@mui/icons-material/Public";
@@ -8,6 +8,8 @@ const Footer = () => {
   const [email, setEmail] = useState("");
 
   const handleChange = ({ target }) => setEmail(target.value);
+
+  const year = new Date().getFullYear();
 
   const pages = [
     { text: "Explore", link: "/" },
@@ -70,14 +72,7 @@ const Footer = () => {
             <li className={styles.linkTitle}>Marketplace</li>
             {pages.map((link, index) => (
               <li key={index}>
-                <NavLink
-                  to={link.link}
-                  className={({ isActive }) =>
-                    isActive ? styles.activeLink : ""
-                  }
-                >
-                  {link.text}
-                </NavLink>
+                <Link to={link.link}>{link.text}</Link>
               </li>
             ))}
           </ul>
@@ -96,25 +91,26 @@ const Footer = () => {
          * Second Grid
          */}
         <section className={`center ${styles.bottom}`}>
-          <ul>
+          <ul className="center">
             <li>
-              <NavLink to="#" className={styles.bottomLink}>
+              <Link to="#" className={styles.bottomLink}>
                 Privacy Policy
-              </NavLink>
+              </Link>
             </li>
             <li className={styles.hideMobile}>
-              <NavLink to="#" className={styles.bottomLink}>
+              <Link to="#" className={styles.bottomLink}>
                 License
-              </NavLink>
+              </Link>
             </li>
             <li className={styles.hideMobile}>
-              <NavLink to="#" className={styles.bottomLink}>
+              <Link to="#" className={styles.bottomLink}>
                 API
-              </NavLink>
+              </Link>
             </li>
-            <li className={styles.hideMobile}>© 2021 All rights reserved</li>
+            <li className={styles.hideMobile}>© {year} All rights reserved</li>
           </ul>
-          <div>
+          <div className="center">
+            <p>English</p>
             <PublicIcon />
           </div>
         </section>

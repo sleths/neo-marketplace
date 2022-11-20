@@ -2,6 +2,7 @@
   background-color: var(--light-gray);
   padding: 24px;
   text-align: center;
+  overflow-x: hidden;
 
   & .wrapper {
     max-width: 1320px;
@@ -92,13 +93,35 @@
   display: none;
 }
 
+.linkTitle {
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.pageLinks a {
+  color: var(--dark-gray);
+  font-size: 14px;
+  line-height: 2.25;
+  font-weight: 600;
+}
+
+.bottom ul, .bottom div {
+  gap: 1.5rem;
+}
+
+.bottom li {
+  font-size: 12px;
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+
 @media screen and (min-width: 768px) {
   .footer {
-    padding-top: 5rem;
+    padding-top: 4rem;
     text-align: left;
     & .container {
       flex-direction: row;
-      padding-bottom: 3rem;
+      padding-bottom: 2rem;
       width: 100%;
       justify-content: space-between;
     }
@@ -156,5 +179,13 @@
         fill: var(--dark-gray);
       }
     }
+  }
+  .iconContainer {
+    align-items: flex-start;
+  }
+
+  .bottom::before {
+    width: 200%;
+    left: -50%;
   }
 }
