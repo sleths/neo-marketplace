@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import { top_sellers } from "../../data";
+import SectionTitle from "../Typography/SectionTitle";
 
 const TopSellerContainer = ({ seller }) => {
   return (
@@ -18,10 +19,10 @@ const TopSellerContainer = ({ seller }) => {
 const TopSellers = () => {
   return (
     <section className={styles.wrapper}>
-      <h2>Top selling creators</h2>
+      <SectionTitle>Top selling creators</SectionTitle>
       <div className={styles.container}>
         {top_sellers.map((seller) => (
-          <TopSellerContainer seller={seller} />
+          <TopSellerContainer seller={seller} key={seller.id} />
         ))}
       </div>
     </section>

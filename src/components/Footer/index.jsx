@@ -59,8 +59,10 @@ const Footer = () => {
             <div className={`center ${styles.iconContainer}`}>
               <h6>Follow Us</h6>
               <ul className={`center ${styles.icons}`}>
-                {links.map((link) => (
-                  <li className="pointer">{link}</li>
+                {links.map((link, index) => (
+                  <li className="pointer" key={index}>
+                    {link}
+                  </li>
                 ))}
               </ul>
             </div>
