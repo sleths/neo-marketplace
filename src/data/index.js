@@ -8,7 +8,7 @@ export const data = [
     },
     nfts: [
       {
-        name: "Election Season",
+        title: "Election Season",
         collection: "Irene Sotelo",
         description: "Description",
         likes: 16,
@@ -29,7 +29,7 @@ export const data = [
     },
     nfts: [
       {
-        name: "Wall of Season",
+        title: "Wall of Season",
         collection: "Irene Sotelo",
         description: "Description",
         likes: 35,
@@ -50,7 +50,7 @@ export const data = [
     },
     nfts: [
       {
-        name: "Lorr’s Ad Issues",
+        title: "Lorr’s Ad Issues",
         collection: "Irene Sotelo",
         description: "Description",
         likes: 30,
@@ -71,7 +71,7 @@ export const data = [
     },
     nfts: [
       {
-        name: "You Fire",
+        title: "You Fire",
         collection: "Irene Sotelo",
         description: "Description",
         likes: 20,
@@ -92,7 +92,7 @@ export const data = [
     },
     nfts: [
       {
-        name: "Shib Toast",
+        title: "Shib Toast",
         collection: "Diane Lansdowne",
         description: "Description",
         likes: 100,
@@ -113,7 +113,7 @@ export const data = [
     },
     nfts: [
       {
-        name: "Applice",
+        title: "Applice",
         collection: "Diane Lansdowne",
         description: "Description",
         likes: 1273,
@@ -134,7 +134,7 @@ export const data = [
     },
     nfts: [
       {
-        name: "Cubic Love",
+        title: "Cubic Love",
         collection: "Diane Lansdowne",
         description: "Description",
         likes: 13,
@@ -155,7 +155,7 @@ export const data = [
     },
     nfts: [
       {
-        name: "Insider Open Door",
+        title: "Insider Open Door",
         collection: "Diane Lansdowne",
         description: "Description",
         likes: 45,
