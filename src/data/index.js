@@ -54,7 +54,7 @@ export const data = [
         collection: "Irene Sotelo",
         description: "Description",
         likes: 30,
-        price: 1,
+        price: 1.1,
         tags: [""],
         img: "./images/nft/nft_three.jpg",
         recommended_creators: true,
@@ -181,7 +181,7 @@ export const top_sellers = [
     id: 2,
     name: "Bored Ape Chemistry Club",
     value: 5344.13,
-    percent: 6.3,
+    percent: 6.25,
     img: "/images/top_sellers/bacc.png",
   },
   {
