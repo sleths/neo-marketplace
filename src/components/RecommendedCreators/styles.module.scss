@@ -14,7 +14,7 @@
 }
 
 .nftContainer {
-  max-width: 324px;
+  max-width: 320px;
   flex-direction: column;
   border-radius: 1rem;
   flex-shrink: 0;
@@ -75,4 +75,10 @@
     font-weight: 700;
     font-size: 14px;
   }
+}
+
+.price {
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
 }

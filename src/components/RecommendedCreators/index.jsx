@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { data } from "../../data/index";
+import { ReactComponent as Eth } from "../../assets/icons/eth.svg";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 import SectionTitle from "../Typography/SectionTitle";
@@ -29,8 +30,8 @@ const RecommendedCreatorsContainer = ({ item }) => {
               {nft.title}
             </Link>
             <p>{`by ${item.user.username}`}</p>
-            <p className={styles.price}>
-              <span>{nft.price}</span>
+            <p className={`center ${styles.price}`}>
+              <Eth /> <strong>{`${nft.price} Eth`}</strong>
             </p>
           </article>
         </>
