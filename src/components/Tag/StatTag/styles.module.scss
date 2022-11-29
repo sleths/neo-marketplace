@@ -1,0 +1,11 @@
+.tag {
+  border: 1px solid var(--med-gray);
+  padding: 0.5rem 0.65rem;
+  border-radius: 18px;
+  gap: 6px;
+  justify-content: center;
+
+  & strong {
+    font-size: 12px;
+  }
+}

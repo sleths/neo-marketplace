@@ -15,10 +15,10 @@ export const data = [
         price: 0.5,
         tags: [""],
         img: "./images/nft/nft_one.jpg",
-        recommended_creators: true,
-        todays_pick: false,
-      }
-    ]
+        recommended_creators: false,
+        todays_pick: true,
+      },
+    ],
   },
   {
     user: {
@@ -38,8 +38,8 @@ export const data = [
         img: "./images/nft/nft_two.jpg",
         recommended_creators: true,
         todays_pick: false,
-      }
-    ]
+      },
+    ],
   },
   {
     user: {
@@ -57,10 +57,10 @@ export const data = [
         price: 1.1,
         tags: [""],
         img: "./images/nft/nft_three.jpg",
-        recommended_creators: true,
-        todays_pick: false,
-      }
-    ]
+        recommended_creators: false,
+        todays_pick: true,
+      },
+    ],
   },
   {
     user: {
@@ -78,10 +78,10 @@ export const data = [
         price: 0.05,
         tags: [""],
         img: "./images/nft/nft_four.jpg",
-        recommended_creators: true,
-        todays_pick: false,
-      }
-    ]
+        recommended_creators: false,
+        todays_pick: true,
+      },
+    ],
   },
   {
     user: {
@@ -101,8 +101,8 @@ export const data = [
         img: "./images/nft/nft_five.jpg",
         recommended_creators: true,
         todays_pick: false,
-      }
-    ]
+      },
+    ],
   },
   {
     user: {
@@ -121,9 +121,9 @@ export const data = [
         tags: [""],
         img: "./images/nft/nft_six.jpg",
         recommended_creators: true,
-        todays_pick: false,
-      }
-    ]
+        todays_pick: true,
+      },
+    ],
   },
   {
     user: {
@@ -142,9 +142,9 @@ export const data = [
         tags: [""],
         img: "./images/nft/nft_seven.jpg",
         recommended_creators: true,
-        todays_pick: false,
-      }
-    ]
+        todays_pick: true,
+      },
+    ],
   },
   {
     user: {
@@ -163,9 +163,9 @@ export const data = [
         tags: [""],
         img: "./images/nft/nft_eight.jpg",
         recommended_creators: true,
-        todays_pick: false,
-      }
-    ]
+        todays_pick: true,
+      },
+    ],
   },
 ];
 
@@ -176,6 +176,9 @@ export const top_sellers = [
     value: 10450,
     percent: 12.5,
     img: "/images/top_sellers/bayc.webp",
+    owners: 1450,
+    twentyFour: 10,
+    floorPrice: 4915,
   },
   {
     id: 2,
@@ -183,6 +186,10 @@ export const top_sellers = [
     value: 5344.13,
     percent: 6.25,
     img: "/images/top_sellers/bacc.png",
+    owners: 600,
+    twentyFour: 8.3,
+    seven: 18.6,
+    floorPrice: 99.1,
   },
   {
     id: 3,
@@ -190,6 +197,10 @@ export const top_sellers = [
     value: 19320,
     percent: 18.4,
     img: "/images/top_sellers/chromie.png",
+    owners: 735,
+    twentyFour: 14.9,
+    seven: 24.5,
+    floorPrice: 4310,
   },
   {
     id: 4,
@@ -197,6 +208,10 @@ export const top_sellers = [
     value: 4579.4,
     percent: 13.5,
     img: "/images/top_sellers/bakc.png",
+    owners: 449,
+    twentyFour: 18.4,
+    seven: 13,
+    floorPrice: 3905,
   },
   {
     id: 5,
@@ -204,6 +219,10 @@ export const top_sellers = [
     value: 13457,
     percent: 7.25,
     img: "/images/top_sellers/wwl.png",
+    owners: 892,
+    twentyFour: 15.6,
+    seven: 19.3,
+    floorPrice: 3750,
   },
   {
     id: 6,
@@ -211,5 +230,9 @@ export const top_sellers = [
     value: 3355.2,
     percent: 9.3,
     img: "/images/top_sellers/bmt.png",
+    owners: 4670,
+    twentyFour: 5.9,
+    seven: 29,
+    floorPrice: 54.3,
   },
 ];

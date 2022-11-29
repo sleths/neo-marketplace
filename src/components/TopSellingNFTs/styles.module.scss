@@ -1,0 +1,32 @@
+.container {
+  padding: 0 24px;
+
+  & h1 {
+    font-size: 1.625rem;
+    font-weight: 800;
+  }
+}
+
+.tags {
+  width: 100%;
+  margin: 1rem 0;
+  gap: 8px;
+
+  & div:last-of-type {
+    margin-left: auto;
+  }
+}
+
+.table img {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    & h1 {
+      font-size: 2.625rem;
+    }
+  }
+}
