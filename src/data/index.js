@@ -178,6 +178,7 @@ export const top_sellers = [
     img: "/images/top_sellers/bayc.webp",
     owners: 1450,
     twentyFour: 10,
+    seven: 18.9,
     floorPrice: 4915,
   },
   {
