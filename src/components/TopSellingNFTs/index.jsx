@@ -1,9 +1,12 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 import { ReactComponent as Blockchain } from "../../assets/icons/blockchain.svg";
 import { ReactComponent as Category } from "../../assets/icons/category.svg";
 import { ReactComponent as Collections } from "../../assets/icons/collections.svg";
 import { ReactComponent as Eth } from "../../assets/icons/eth.svg";
+
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import StatTag from "../Tag/StatTag";
 
@@ -48,56 +51,78 @@ const tags = [
 const TopSellingNFTs = () => {
   const [data, setData] = useState(top_sellers);
 
-  const [sort, setSort] = useState({ col: "", order: "ASC" });
-
-  const prevCol = useRef();
+  const [sort, setSort] = useState({ col: "", order: null });
 
   const handleOrder = (col) => {
     switch (sort.order) {
       case "ASC":
-        return setSort({ col: col, order: "DESC" });
+        return setSort((prev) =>
+          prev.col === col
+            ? { col: col, order: "DESC" }
+            : { col: col, order: "ASC" }
+        );
       case "DESC":
-        return setSort({ col: col, order: null });
+        return setSort((prev) =>
+          prev.col === col
+            ? { col: col, order: null }
+            : { col: col, order: "ASC" }
+        );
       case null:
-        return setSort({ col: col, order: "ASC" });
+        return setSort((prev) =>
+          prev.col === col
+            ? { col: col, order: "ASC" }
+            : { col: col, order: "ASC" }
+        );
+      default:
+        break;
     }
   };
 
-  const handleSortSwitch = (col) => {
-    /*  if (col !== "" && prevCol.current === col) {
-      handleOrder()
-    } else {
-      setSort({ col: col, order: "ASC" });
-    } */
-
-    handleOrder(col);
-  };
-
-  const sortData = (col) => {
+  const seperateSort = () => {
     const sortable = [...data];
     sortable.sort((a, b) => {
-      if (sort.order === "ASC") return b[col] - a[col];
-      else if (sort.order === "DESC") return a[col] - b[col];
+      if (sort.order === "ASC") return a[sort.col] - b[sort.col];
+      else if (sort.order === "DESC") return b[sort.col] - a[sort.col];
     });
-    handleSortSwitch(col);
-    setData(sort.order === null ? top_sellers : sortable);
+    return sort.order === null ? top_sellers : sortable;
   };
 
   useEffect(() => {
-    prevCol.current = sort.col;
-  }, [sort.col]);
-
-  useEffect(() => {
-    console.log(sort);
+    setData(seperateSort());
   }, [sort]);
+
+  const notSortedIconPack = () => {
+    return (
+      <div className={`center ${styles.icons}`}>
+        <KeyboardArrowUpIcon />
+        <KeyboardArrowDownIcon />
+      </div>
+    );
+  };
+
+  const renderSortIcon = (col) => {
+    if (col === sort.col) {
+      switch (sort.order) {
+        case "ASC":
+          return <KeyboardArrowUpIcon />;
+        case "DESC":
+          return <KeyboardArrowDownIcon />;
+        case null:
+          return notSortedIconPack();
+        default:
+          break;
+      }
+    } else {
+      return notSortedIconPack();
+    }
+  };
 
   return (
     <section className={styles.container}>
       <h1>Top selling NFTs</h1>
-      <p>{prevCol.current}</p> <p>{sort.col}</p>
       <section className={`center ${styles.tags}`}>
         {tags.map((tag) => (
-          <StatTag data={tag} />
+          <StatTag data={tag} key={tag.text} />
         ))}
       </section>
       <div className={styles.tableContainer}>
@@ -107,16 +132,30 @@ const TopSellingNFTs = () => {
               <th className={styles.hiddenHeader}>ID</th>
               <th className={styles.hiddenHeader}>Avatar</th>
               <th className={styles.firstHeader}>Collections</th>
-              <th onClick={() => sortData("value")}>Volume</th>
-              <th onClick={() => sortData("twentyFour")}>24h %</th>
-              <th onClick={() => sortData("seven")}>7h %</th>
-              <th onClick={() => sortData("floorPrice")}>Floor price</th>
-              <th onClick={() => sortData("owners")}>Owners</th>
+              <th onClick={() => handleOrder("value")}>
+                <div className="center">Volume {renderSortIcon("value")}</div>
+              </th>
+              <th onClick={() => handleOrder("twentyFour")}>
+                <div className="center">
+                  24h % {renderSortIcon("twentyFour")}
+                </div>
+              </th>
+              <th onClick={() => handleOrder("seven")}>
+                <div className="center">7h % {renderSortIcon("seven")} </div>
+              </th>
+              <th onClick={() => handleOrder("floorPrice")}>
+                <div className="center">
+                  Floor price {renderSortIcon("floorPrice")}
+                </div>
+              </th>
+              <th onClick={() => handleOrder("owners")}>
+                <div className="center">Owners {renderSortIcon("owners")}</div>
+              </th>
             </tr>
           </thead>
           <tbody>
-            {data.map((seller, index) => {
-              return <TopSellingNFTRow seller={seller} index={index} />;
+            {data.map((seller) => {
+              return <TopSellingNFTRow seller={seller} index={seller.id} />;
             })}
           </tbody>
         </table>
