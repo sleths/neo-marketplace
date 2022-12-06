@@ -16,7 +16,7 @@ import styles from "./styles.module.scss";
 const TopSellingNFTRow = ({ seller, index }) => {
   return (
     <tr>
-      <td className={styles.name}>{index + 1}</td>
+      <td className={styles.name}>{seller.id}</td>
       <td className={styles.image}>
         <img src={seller.img} alt={seller.name} />
       </td>
