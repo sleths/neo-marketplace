@@ -1,8 +1,10 @@
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { data } from "../../data/index";
 import { ReactComponent as Eth } from "../../assets/icons/eth.svg";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SectionTitle from "../Typography/SectionTitle";
 
 import styles from "./styles.module.scss";
@@ -41,14 +43,29 @@ const RecommendedCreatorsContainer = ({ item }) => {
 };
 
 const RecommendedCreators = () => {
+  const [width, setWidth] = useState(0);
+
+  const carousel = useRef();
+
+  useEffect(
+    () => setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth),
+    []
+  );
+
   return (
     <section className={styles.wrapper}>
       <SectionTitle>Recommended creators</SectionTitle>
-      <div className={styles.container}>
-        {data.map((item, index) => {
-          return <RecommendedCreatorsContainer item={item} key={index} />;
-        })}
-      </div>
+      <motion.div
+        className={styles.container}
+        ref={carousel}
+        whileTap={{ cursor: "grabbing" }}
+      >
+        <motion.div drag="x" dragConstraints={{ right: 0, left: -width }}>
+          {data.map((item, index) => {
+            return <RecommendedCreatorsContainer item={item} key={index} />;
+          })}
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

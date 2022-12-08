@@ -3,9 +3,13 @@
 }
 
 .container {
-  display: flex;
-  gap: 1rem;
-  overflow: scroll;
+  overflow: hidden;
+  cursor: grab;
+
+  & div {
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 .nftContainer,
@@ -38,6 +42,7 @@
   border-radius: 10px 10px 0px 0px;
   height: 302px;
   object-fit: cover;
+  pointer-events: none;
 }
 
 .userImg {
@@ -71,7 +76,7 @@
   & svg {
     font-size: 1rem;
   }
-  & p{
+  & p {
     font-weight: 700;
     font-size: 14px;
   }
