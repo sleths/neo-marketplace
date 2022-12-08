@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { data } from "../../data/index";
 import { ReactComponent as Eth } from "../../assets/icons/eth.svg";
 
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SectionTitle from "../Typography/SectionTitle";
 
 import styles from "./styles.module.scss";
+import LikeTag from "../Tag/LikeTag";
 
 const RecommendedCreatorsContainer = ({ item }) => {
   return (
@@ -15,10 +15,7 @@ const RecommendedCreatorsContainer = ({ item }) => {
       {item.nfts.map((nft) => (
         <>
           <img src={nft.img} alt={nft.title} className={styles.nft} />
-          <div className={`center ${styles.like}`}>
-            <FavoriteBorderIcon />
-            <p>{nft.likes}</p>
-          </div>
+          <LikeTag value={nft.likes} />
           <article>
             <img
               src={item.user.img}

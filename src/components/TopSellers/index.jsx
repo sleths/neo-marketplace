@@ -1,6 +1,8 @@
-import styles from "./styles.module.scss";
 import { top_sellers } from "../../data";
+
 import SectionTitle from "../Typography/SectionTitle";
+
+import styles from "./styles.module.scss";
 
 const TopSellerContainer = ({ seller }) => {
   return (
