@@ -1,0 +1,14 @@
+.wrapper {
+  padding: 24px;
+}
+
+.container {
+  overflow: hidden;
+  cursor: grab;
+
+  & div {
+    display: flex;
+    gap: 1rem;
+  }
+}
+

@@ -76,7 +76,7 @@
     width: 54px;
     height: 54px;
     border-radius: 50%;
-    background-color: #7a52f4;
+    background-color: var(--dark-purple);
     transition: opacity 0.3s ease;
     &:hover {
       opacity: 0.8;
@@ -93,7 +93,7 @@
   .hero article {
     text-align: left;
     align-items: flex-start;
-    padding: 0;
+    padding: 0 24px;
 
     & h1 {
       font-size: 2.8rem;

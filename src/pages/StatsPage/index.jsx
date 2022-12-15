@@ -1,5 +1,5 @@
-import Layout from "../../components/Layout";
-import TopSellingNFTs from "../../components/TopSellingNFTs";
+import Layout from "../../components/MarketplaceLayout/Layout";
+import TopSellingNFTs from "../../components/Wrapper/TopSellingNFTs";
 
 const StatsPage = () => {
   return (

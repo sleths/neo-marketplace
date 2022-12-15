@@ -8,6 +8,7 @@ export const data = [
     },
     nfts: [
       {
+        id: 1,
         title: "Election Season",
         collection: "Irene Sotelo",
         description: "Description",
@@ -29,6 +30,7 @@ export const data = [
     },
     nfts: [
       {
+        id: 2,
         title: "Wall of Season",
         collection: "Irene Sotelo",
         description: "Description",
@@ -50,6 +52,7 @@ export const data = [
     },
     nfts: [
       {
+        id: 3,
         title: "Lorr’s Ad Issues",
         collection: "Irene Sotelo",
         description: "Description",
@@ -71,6 +74,7 @@ export const data = [
     },
     nfts: [
       {
+        id: 4,
         title: "You Fire",
         collection: "Irene Sotelo",
         description: "Description",
@@ -92,6 +96,7 @@ export const data = [
     },
     nfts: [
       {
+        id: 5,
         title: "Shib Toast",
         collection: "Diane Lansdowne",
         description: "Description",
@@ -113,6 +118,7 @@ export const data = [
     },
     nfts: [
       {
+        id: 6,
         title: "Applice",
         collection: "Diane Lansdowne",
         description: "Description",
@@ -134,6 +140,7 @@ export const data = [
     },
     nfts: [
       {
+        id: 7,
         title: "Cubic Love",
         collection: "Diane Lansdowne",
         description: "Description",
@@ -155,6 +162,7 @@ export const data = [
     },
     nfts: [
       {
+        id: 8,
         title: "Insider Open Door",
         collection: "Diane Lansdowne",
         description: "Description",

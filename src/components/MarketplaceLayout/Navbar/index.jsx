@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
+import { ReactComponent as Logo } from "../../../assets/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import DensitySmallIcon from "@mui/icons-material/DensitySmall";
 import CloseIcon from "@mui/icons-material/Close";

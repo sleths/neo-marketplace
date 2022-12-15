@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 
-import { ReactComponent as Blockchain } from "../../assets/icons/blockchain.svg";
-import { ReactComponent as Category } from "../../assets/icons/category.svg";
-import { ReactComponent as Collections } from "../../assets/icons/collections.svg";
-import { ReactComponent as Eth } from "../../assets/icons/eth.svg";
+import { ReactComponent as Blockchain } from "../../../assets/icons/blockchain.svg";
+import { ReactComponent as Category } from "../../../assets/icons/category.svg";
+import { ReactComponent as Collections } from "../../../assets/icons/collections.svg";
+import { ReactComponent as Eth } from "../../../assets/icons/eth.svg";
 
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-import StatTag from "../Tag/StatTag";
+import StatTag from "../../Tag/StatTag";
 
-import { top_sellers } from "../../data";
+import { top_sellers } from "../../../data";
 import styles from "./styles.module.scss";
 
 const TopSellingNFTRow = ({ seller, index }) => {

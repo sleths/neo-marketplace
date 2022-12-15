@@ -1,28 +1,10 @@
-.wrapper {
-  padding: 24px;
-}
-
-.container {
-  overflow: hidden;
-  cursor: grab;
-
-  & div {
-    display: flex;
-    gap: 1rem;
-  }
-}
-
-.nftContainer,
-.like {
-  border: 1px solid var(--med-gray);
-}
-
 .nftContainer {
   max-width: 320px;
   flex-direction: column;
   border-radius: 1rem;
   flex-shrink: 0;
   position: relative;
+  border: 1px solid var(--med-gray);
 
   & article {
     position: relative;
@@ -56,13 +38,6 @@
   left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
-}
-
-.title {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  color: black;
 }
 
 .like {
