@@ -19,6 +19,7 @@ export const data = [
         img: "./images/nft/nft_one.jpg",
         recommended_creators: false,
         todays_pick: true,
+        address: "0xD8045B2620F75FCAE4B5D96558D26CEA8E21F87F"
       },
     ],
   },
@@ -42,6 +43,7 @@ export const data = [
         img: "./images/nft/nft_two.jpg",
         recommended_creators: true,
         todays_pick: false,
+        address: "0x59AD5225322D4A8925688CC9D21361E337D085C9"
       },
     ],
   },
@@ -65,6 +67,7 @@ export const data = [
         img: "./images/nft/nft_three.jpg",
         recommended_creators: false,
         todays_pick: true,
+        address: "0x665D2155B91DB60C6CFFF7B3AED1B90FFA8CB531"
       },
     ],
   },
@@ -88,6 +91,7 @@ export const data = [
         img: "./images/nft/nft_four.jpg",
         recommended_creators: false,
         todays_pick: true,
+        address: "0xE9F2402DA660104DE01A7785D27A96A4370D3B6F"
       },
     ],
   },
@@ -111,6 +115,7 @@ export const data = [
         img: "./images/nft/nft_five.jpg",
         recommended_creators: true,
         todays_pick: false,
+        address: "0x7C03CF2991BB0B4FF7797025C510476C29041772"
       },
     ],
   },
@@ -134,6 +139,7 @@ export const data = [
         img: "./images/nft/nft_six.jpg",
         recommended_creators: true,
         todays_pick: true,
+        address: "0x107EE3FFAEB0C6D3F29F0DA33FEB88706961E2DE"
       },
     ],
   },
@@ -157,6 +163,7 @@ export const data = [
         img: "./images/nft/nft_seven.jpg",
         recommended_creators: true,
         todays_pick: true,
+        address: "0xC8C8D07772159D3EA145DF60AC5B09E5D265957E"
       },
     ],
   },
@@ -180,6 +187,7 @@ export const data = [
         img: "./images/nft/nft_eight.jpg",
         recommended_creators: true,
         todays_pick: true,
+        address: "0x62E47EDBF450FB955F65BD35A158D7B15ED99790"
       },
     ],
   },

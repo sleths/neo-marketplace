@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { createSlug } from "../../../utils/helpers";
 
 import styles from "./styles.module.scss";
 
-const UserTitle = ({ children }) => {
+const UserTitle = ({ children, to }) => {
   return (
-    <Link to={createSlug("nft", children)} className={styles.title}>
+    <Link to={`/nft/${to}`} className={styles.title}>
       {children}
     </Link>
   );

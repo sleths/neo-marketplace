@@ -12,6 +12,7 @@ import StatTag from "../../Tag/StatTag";
 
 import { top_sellers } from "../../../data";
 import styles from "./styles.module.scss";
+import PageTitle from "../../Typography/PageTitle";
 
 const TopSellingNFTRow = ({ seller, index }) => {
   return (
@@ -119,7 +120,7 @@ const TopSellingNFTs = () => {
 
   return (
     <section className={styles.container}>
-      <h1>Top selling NFTs</h1>
+      <PageTitle>Top selling NFTs</PageTitle>
       <section className={`center ${styles.tags}`}>
         {tags.map((tag) => (
           <StatTag data={tag} key={tag.text} />

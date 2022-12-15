@@ -13,7 +13,7 @@ const TodayPickContainer = ({ item }) => {
         <section className={`center ${styles.container}`}>
           <img className={styles.nft} src={nft.img} alt={nft.title} />
           <LikeTag value={nft.likes} />
-          <UserTitle>{nft.title}</UserTitle>
+          <UserTitle to={nft.address}>{nft.title}</UserTitle>
           <div className={`center ${styles.price}`}>
             <p>Price</p>
             <strong className="center">

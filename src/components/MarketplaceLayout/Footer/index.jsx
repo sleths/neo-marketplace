@@ -4,28 +4,13 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PublicIcon from "@mui/icons-material/Public";
 import links from "./Links";
 import styles from "./styles.module.scss";
+import { pageLinks } from "../../../utils/helpers";
 const Footer = () => {
   const [email, setEmail] = useState("");
 
   const handleChange = ({ target }) => setEmail(target.value);
 
   const year = new Date().getFullYear();
-
-  const pages = [
-    { text: "Explore", link: "/" },
-    {
-      text: "Stats",
-      link: "/stats",
-    },
-    {
-      text: "Drops",
-      link: "/drops",
-    },
-    {
-      text: "Activity",
-      link: "/activity",
-    },
-  ];
 
   return (
     <footer className={styles.footer}>
@@ -72,7 +57,7 @@ const Footer = () => {
            */}
           <ul className={styles.pageLinks}>
             <li className={styles.linkTitle}>Marketplace</li>
-            {pages.map((link, index) => (
+            {pageLinks.map((link, index) => (
               <li key={index}>
                 <Link to={link.link}>{link.text}</Link>
               </li>

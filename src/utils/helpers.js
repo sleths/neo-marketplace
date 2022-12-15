@@ -1,3 +1,11 @@
-export const createSlug = (prefix, str) => {
-    return `/${prefix}/${str.trim().replaceAll(" ", "-").toLowerCase()}`;
-}
+export const pageLinks = [
+  { text: "Explore", link: "/" },
+  {
+    text: "Stats",
+    link: "/stats",
+  },
+  {
+    text: "Drops",
+    link: "/drops",
+  },
+];
