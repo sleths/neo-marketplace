@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 @import url("./variables.scss");
+
 *,
 *::before,
 *::after {
@@ -32,12 +33,17 @@ button {
   align-items: center;
 }
 
+.wrapper {
+  padding: 24px;
+}
+
 button,
 .pointer {
   cursor: pointer;
 }
 
-main > section {
-  max-width: 1320px;
+main > section,
+.max-width {
+  max-width: var(--max-width);
   margin: 0 auto;
 }

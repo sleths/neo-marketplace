@@ -32,7 +32,7 @@ const Footer = () => {
       {/**
        * Wrapper
        */}
-      <div className={styles.wrapper}>
+      <div className={`max-width ${styles.wrapper}`}>
         <section className={styles.container}>
           {/**
            * First Grid

@@ -29,7 +29,7 @@ const Navbar = () => {
   const close = () => setVisible(false);
 
   return (
-    <nav className={`center ${styles.nav}`}>
+    <nav className={`center max-width ${styles.nav}`}>
       <Link to="/">
         <Logo />
       </Link>

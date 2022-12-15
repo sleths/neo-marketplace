@@ -19,7 +19,7 @@ const RecommendedCreators = () => {
   );
 
   return (
-    <section className={styles.wrapper}>
+    <section className="wrapper">
       <SectionTitle>Recommended creators</SectionTitle>
       <motion.div
         className={styles.container}

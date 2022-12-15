@@ -1,3 +1,3 @@
-export const createSlug = (str) => {
-    return `/${str.trim().replaceAll(" ", "-").toLowerCase()}`;
+export const createSlug = (prefix, str) => {
+    return `/${prefix}/${str.trim().replaceAll(" ", "-").toLowerCase()}`;
 }

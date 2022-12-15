@@ -1,0 +1,14 @@
+.hero {
+  & article {
+    width: 90%;
+    min-height: 50vh;
+    margin: 0 auto;
+    background-image: url("../../../../assets/drops-bg.png");
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+}

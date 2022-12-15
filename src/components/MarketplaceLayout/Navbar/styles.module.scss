@@ -1,8 +1,6 @@
 .nav {
   padding: 24px;
   justify-content: space-between;
-  max-width: 1320px;
-  margin: 0 auto;
 }
 
 .navLinks {
@@ -71,5 +69,8 @@
       font-size: 0.9rem;
       text-transform: capitalize;
     }
+  }
+  .navLinks {
+    pointer-events: all;
   }
 }

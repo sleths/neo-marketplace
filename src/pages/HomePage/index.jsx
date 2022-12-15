@@ -1,5 +1,5 @@
 import Layout from "../../components/MarketplaceLayout/Layout";
-import Hero from "../../components/Hero";
+import HomePageHero from "../../components/MarketplaceLayout/Hero/HomePageHero"
 import TopSellers from "../../components/Wrapper/TopSellers";
 import RecommendedCreators from "../../components/Wrapper/RecommendedCreators";
 import TodaysPicks from "../../components/Wrapper/TodaysPicks";
@@ -7,7 +7,7 @@ import TodaysPicks from "../../components/Wrapper/TodaysPicks";
 const HomePage = () => {
   return (
     <Layout>
-      <Hero />
+      <HomePageHero />
       <RecommendedCreators />
       <TopSellers />
       <TodaysPicks />

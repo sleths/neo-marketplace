@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 
 const UserTitle = ({ children }) => {
   return (
-    <Link to={createSlug(children)} className={styles.title}>
+    <Link to={createSlug("nft", children)} className={styles.title}>
       {children}
     </Link>
   );

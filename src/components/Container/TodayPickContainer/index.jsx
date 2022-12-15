@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { ReactComponent as Eth } from "../../../assets/icons/eth.svg";
-import { createSlug } from "../../../utils/helpers";
 
 import LikeTag from "../../Tag/LikeTag";
 import UserTitle from "../../Typography/UserTitle";
@@ -30,7 +29,7 @@ const TodayPickContainer = ({ item }) => {
                 alt={item.user.username}
                 className={styles.userImg}
               />
-              <Link to={createSlug(item.user.username)}>
+              <Link to={`/user/${item.user.address}`}>
                 {item.user.username}
               </Link>
             </div>

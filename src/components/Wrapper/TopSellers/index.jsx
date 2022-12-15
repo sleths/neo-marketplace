@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 
 const TopSellers = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className="wrapper">
       <SectionTitle>Top selling creators</SectionTitle>
       <div className={styles.container}>
         {top_sellers.map((seller) => (

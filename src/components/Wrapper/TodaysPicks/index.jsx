@@ -27,7 +27,7 @@ const TodaysPicks = () => {
   useEffect(() => setShowData(sliceNftsArray()), [showItemCount]);
 
   return (
-    <section className={styles.wrapper}>
+    <section className="wrapper">
       <SectionTitle>Today's picks</SectionTitle>
       <div className={`center ${styles.container}`}>
         {showData.map((item) => (

@@ -5,6 +5,7 @@ export const data = [
       img: "./images/user/user_andrea.webp",
       followers: 102,
       following: 78,
+      address: "0xC85C8CD8BF177A05A926CAFFE58EC7C07167C101",
     },
     nfts: [
       {
@@ -27,6 +28,7 @@ export const data = [
       img: "./images/user/user_hasibullah.jpeg",
       followers: 210,
       following: 350,
+      address: "0x514765350F5B8475B879CD432E8B7564C5ADDC0A",
     },
     nfts: [
       {
@@ -49,6 +51,7 @@ export const data = [
       img: "./images/user/user_dazzle.jpeg",
       followers: 10,
       following: 1,
+      address: "0x382B29925D24D63B0846E09A3666E1288D575475",
     },
     nfts: [
       {
@@ -71,6 +74,7 @@ export const data = [
       img: "./images/user/user_danang.jpeg",
       followers: 2000,
       following: 50,
+      address: "0x5FE9FC4FBD8CBF6D96A2DCEAB6E15AA9F37CE73E",
     },
     nfts: [
       {
@@ -93,6 +97,7 @@ export const data = [
       img: "./images/user/user_hamann.jpeg",
       followers: 33,
       following: 46,
+      address: "0xE491B99DB7E8C5C76D1FC06A3FBE991C9312146F",
     },
     nfts: [
       {
@@ -115,6 +120,7 @@ export const data = [
       img: "./images/user/user_godisable.jpeg",
       followers: 5369,
       following: 10,
+      address: "0xA3EE6EE4B096A692F9214AEBC7A159B6D1A62452",
     },
     nfts: [
       {
@@ -137,6 +143,7 @@ export const data = [
       img: "./images/user/user_noelle.webp",
       followers: 235,
       following: 190,
+      address: "0x29AF74D543A07E377DB1B347B8CB85F0200BF6D4",
     },
     nfts: [
       {
@@ -159,6 +166,7 @@ export const data = [
       img: "./images/user/user_royal.jpeg",
       followers: 87,
       following: 92,
+      address: "0xB47BB0CAA91EDCE085A053586841ACAC6E39C600",
     },
     nfts: [
       {

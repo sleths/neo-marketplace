@@ -5,8 +5,6 @@
   overflow-x: hidden;
 
   & .wrapper {
-    max-width: 1320px;
-    margin: 0 auto;
     align-items: center;
     padding: 0 24px;
   }
@@ -121,7 +119,7 @@
   .footer {
     padding-top: 4rem;
     text-align: left;
-  
+
     & .container {
       flex-direction: row;
       padding-bottom: 2rem;
