@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
+import { createSlug } from "../../../utils/helpers";
 
 import styles from "./styles.module.scss";
 
 const UserTitle = ({ children }) => {
   return (
-    <Link
-      to={`/${children.trim().replaceAll(" ", "-").toLowerCase()}`}
-      className={styles.title}
-    >
+    <Link to={createSlug(children)} className={styles.title}>
       {children}
     </Link>
   );

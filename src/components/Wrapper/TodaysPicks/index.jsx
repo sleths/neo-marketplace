@@ -11,9 +11,10 @@ const TodaysPicks = () => {
   const [showItemCount, setShowItemCount] = useState(4);
   // Select today's pick nfts
   const todaysNftsArr = () => {
-    const nfts = data
-      .filter((item) => item["nfts"].some((x) => x.todays_pick === true))
-      .map((item) => item.nfts);
+    const nfts = data.filter((item) =>
+      item["nfts"].some((x) => x.todays_pick === true)
+    );
+
     return nfts;
   };
 
@@ -29,9 +30,9 @@ const TodaysPicks = () => {
     <section className={styles.wrapper}>
       <SectionTitle>Today's picks</SectionTitle>
       <div className={`center ${styles.container}`}>
-        {showData.map((item) =>
-          item.map((nft) => <TodayPickContainer nft={nft} key={nft.id} />)
-        )}
+        {showData.map((item) => (
+          <TodayPickContainer item={item} />
+        ))}
       </div>
       <LoadMoreButton
         onClick={counter}
