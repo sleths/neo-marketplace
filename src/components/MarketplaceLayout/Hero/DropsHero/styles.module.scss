@@ -1,14 +1,55 @@
-.hero {
-  & article {
-    width: 90%;
-    min-height: 50vh;
-    margin: 0 auto;
-    background-image: url("../../../../assets/drops-bg.png");
-    border-radius: 1rem;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
+.hero article {
+  width: 90%;
+  min-height: 45vh;
+  background-image: url("../../../../assets/drops-bg.png");
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  text-align: center;
+
+  & h1 {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+}
+
+.counter {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.cta {
+  width: 11rem;
+  background-color: var(--dark-purple);
+  color: white;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 24px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-top: 2rem;
+
+  &:hover {
+      transform: scale(1.05);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 0 24px;
+
+    & article {
+      width: 100%;
+
+      & h1 {
+          font-size: 3rem;
+      }
+    }
   }
 }
