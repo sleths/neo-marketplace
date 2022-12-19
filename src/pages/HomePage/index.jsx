@@ -1,16 +1,21 @@
 import Layout from "../../components/MarketplaceLayout/Layout";
-import HomePageHero from "../../components/MarketplaceLayout/Hero/HomePageHero"
-import TopSellers from "../../components/Wrapper/TopSellers";
-import RecommendedCreators from "../../components/Wrapper/RecommendedCreators";
-import TodaysPicks from "../../components/Wrapper/TodaysPicks";
+import HomePageHero from "../../components/MarketplaceLayout/Hero/HomePageHero";
+import RecommendedCreatorsContainer from "../../components/Container/RecommendedCreatorsContainer";
+import CarouselWraper from "../../components/Wrapper/CarouselWraper";
+import LoadMoreWrapper from "../../components/Wrapper/LoadMoreWrapper";
+
+import { data } from "../../data/index";
 
 const HomePage = () => {
   return (
     <Layout>
       <HomePageHero />
-      <RecommendedCreators />
-      <TopSellers />
-      <TodaysPicks />
+      <CarouselWraper title="Recommended creators">
+        {data.map((item, index) => {
+          return <RecommendedCreatorsContainer item={item} key={index} />;
+        })}
+      </CarouselWraper>
+      <LoadMoreWrapper title="Today's picks" mode="todays_pick" />
     </Layout>
   );
 };

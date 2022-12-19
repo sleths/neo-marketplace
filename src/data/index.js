@@ -262,7 +262,7 @@ export const top_sellers = [
   },
 ];
 
-const drops = [
+export const drops = [
   {
     id: 1,
     name: "Purple Blend",
@@ -274,7 +274,7 @@ const drops = [
   {
     id: 2,
     name: "Space Man",
-    img: "/images/drops/drop_two.webp",
+    img: "/images/drops/drop_two.jpeg",
     price: 2,
     today: false,
     date: "26 Mar 2023",
@@ -296,7 +296,7 @@ const drops = [
     price: 0.01,
     today: false,
     date: "03 Apr 2023",
-    owner: [
+    owners: [
       {
         username: "Godisable Jacob",
         img: "./images/user/user_godisable.jpeg",
@@ -306,7 +306,7 @@ const drops = [
   {
     id: 4,
     name: "Scarry Night",
-    img: "/images/drops/drop_four.webp",
+    img: "/images/drops/drop_four.jpeg",
     price: 0.01,
     today: true,
     owners: [
@@ -390,7 +390,7 @@ const drops = [
   {
     id: 10,
     name: "Etoile",
-    img: "/images/drops/drop_nine.jpeg",
+    img: "/images/drops/drop_ten.jpeg",
     price: 0.0001,
     today: false,
     date: "06 May 2023",
@@ -403,8 +403,7 @@ const drops = [
     name: "Land Escape",
     img: "/images/drops/drop_eleven.jpeg",
     price: 1,
-    today: false,
-    date: "15 May 2023",
+    today: true,
     owners: [
       { username: "Dazzle Jam", img: "./images/user/user_dazzle.jpeg" },
       { username: "Godisable Jacob", img: "./images/user/user_godisable.jpeg" },
