@@ -19,7 +19,7 @@ export const data = [
         img: "./images/nft/nft_one.jpg",
         recommended_creators: false,
         todays_pick: true,
-        address: "0xD8045B2620F75FCAE4B5D96558D26CEA8E21F87F"
+        address: "0xD8045B2620F75FCAE4B5D96558D26CEA8E21F87F",
       },
     ],
   },
@@ -43,7 +43,7 @@ export const data = [
         img: "./images/nft/nft_two.jpg",
         recommended_creators: true,
         todays_pick: false,
-        address: "0x59AD5225322D4A8925688CC9D21361E337D085C9"
+        address: "0x59AD5225322D4A8925688CC9D21361E337D085C9",
       },
     ],
   },
@@ -67,7 +67,7 @@ export const data = [
         img: "./images/nft/nft_three.jpg",
         recommended_creators: false,
         todays_pick: true,
-        address: "0x665D2155B91DB60C6CFFF7B3AED1B90FFA8CB531"
+        address: "0x665D2155B91DB60C6CFFF7B3AED1B90FFA8CB531",
       },
     ],
   },
@@ -91,7 +91,7 @@ export const data = [
         img: "./images/nft/nft_four.jpg",
         recommended_creators: false,
         todays_pick: true,
-        address: "0xE9F2402DA660104DE01A7785D27A96A4370D3B6F"
+        address: "0xE9F2402DA660104DE01A7785D27A96A4370D3B6F",
       },
     ],
   },
@@ -115,7 +115,7 @@ export const data = [
         img: "./images/nft/nft_five.jpg",
         recommended_creators: true,
         todays_pick: false,
-        address: "0x7C03CF2991BB0B4FF7797025C510476C29041772"
+        address: "0x7C03CF2991BB0B4FF7797025C510476C29041772",
       },
     ],
   },
@@ -139,7 +139,7 @@ export const data = [
         img: "./images/nft/nft_six.jpg",
         recommended_creators: true,
         todays_pick: true,
-        address: "0x107EE3FFAEB0C6D3F29F0DA33FEB88706961E2DE"
+        address: "0x107EE3FFAEB0C6D3F29F0DA33FEB88706961E2DE",
       },
     ],
   },
@@ -163,7 +163,7 @@ export const data = [
         img: "./images/nft/nft_seven.jpg",
         recommended_creators: true,
         todays_pick: true,
-        address: "0xC8C8D07772159D3EA145DF60AC5B09E5D265957E"
+        address: "0xC8C8D07772159D3EA145DF60AC5B09E5D265957E",
       },
     ],
   },
@@ -187,7 +187,7 @@ export const data = [
         img: "./images/nft/nft_eight.jpg",
         recommended_creators: true,
         todays_pick: true,
-        address: "0x62E47EDBF450FB955F65BD35A158D7B15ED99790"
+        address: "0x62E47EDBF450FB955F65BD35A158D7B15ED99790",
       },
     ],
   },
@@ -259,5 +259,350 @@ export const top_sellers = [
     twentyFour: 5.9,
     seven: 29,
     floorPrice: 54.3,
+  },
+];
+
+const drops = [
+  {
+    id: 1,
+    name: "Purple Blend",
+    img: "/images/drops/drop_one.webp",
+    price: 0.1,
+    today: true,
+    owners: [{ username: "Royal Anwar", img: "./images/user/user_royal.jpeg" }],
+  },
+  {
+    id: 2,
+    name: "Space Man",
+    img: "/images/drops/drop_two.webp",
+    price: 2,
+    today: false,
+    date: "26 Mar 2023",
+    owners: [
+      {
+        username: "Andrea Piacquadio",
+        img: "./images/user/user_andrea.webp",
+      },
+      {
+        username: "Royal Anwar",
+        img: "./images/user/user_royal.jpeg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Mirror",
+    img: "/images/drops/drop_three.webp",
+    price: 0.01,
+    today: false,
+    date: "03 Apr 2023",
+    owner: [
+      {
+        username: "Godisable Jacob",
+        img: "./images/user/user_godisable.jpeg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Scarry Night",
+    img: "/images/drops/drop_four.webp",
+    price: 0.01,
+    today: true,
+    owners: [
+      {
+        username: "Hasibullah Zhowandai",
+        img: "./images/user/user_hasibullah.jpeg",
+      },
+      {
+        username: "Andrea Piacquadio",
+        img: "./images/user/user_andrea.webp",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Holding",
+    img: "/images/drops/drop_five.webp",
+    price: 0.03,
+    today: true,
+    owners: [
+      {
+        username: "Dazzle Jam",
+        img: "./images/user/user_dazzle.jpeg",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Holding",
+    img: "/images/drops/drop_six.webp",
+    price: 0.03,
+    today: false,
+    date: "14 Apr 2023",
+    owners: [
+      {
+        username: "Hamann La",
+        img: "./images/user/user_hamann.jpeg",
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Bridge Between Us",
+    img: "/images/drops/drop_seven.webp",
+    price: 0.045,
+    today: false,
+    date: "23 Apr 2023",
+    owners: [
+      {
+        username: "Hamann La",
+        img: "./images/user/user_hamann.jpeg",
+      },
+      {
+        username: "Andrea Piacquadio",
+        img: "./images/user/user_andrea.webp",
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "Peace Out",
+    img: "/images/drops/drop_eight.webp",
+    price: 0.005,
+    today: false,
+    date: "01 May 2023",
+    owners: [
+      { username: "Noelle Otto", img: "./images/user/user_noelle.webp" },
+    ],
+  },
+  {
+    id: 9,
+    name: "Voile Windows",
+    img: "/images/drops/drop_nine.jpeg",
+    price: 0.0001,
+    today: false,
+    date: "04 May 2023",
+    owners: [
+      { username: "Noelle Otto", img: "./images/user/user_noelle.webp" },
+    ],
+  },
+  {
+    id: 10,
+    name: "Etoile",
+    img: "/images/drops/drop_nine.jpeg",
+    price: 0.0001,
+    today: false,
+    date: "06 May 2023",
+    owners: [
+      { username: "Noelle Otto", img: "./images/user/user_noelle.webp" },
+    ],
+  },
+  {
+    id: 11,
+    name: "Land Escape",
+    img: "/images/drops/drop_eleven.jpeg",
+    price: 1,
+    today: false,
+    date: "15 May 2023",
+    owners: [
+      { username: "Dazzle Jam", img: "./images/user/user_dazzle.jpeg" },
+      { username: "Godisable Jacob", img: "./images/user/user_godisable.jpeg" },
+    ],
+  },
+  {
+    id: 12,
+    name: "Tom / Jerry",
+    img: "/images/drops/drop_twelve.webp",
+    price: 0.7,
+    today: false,
+    date: "25 May 2023",
+    owners: [
+      { username: "Godisable Jacob", img: "./images/user/user_godisable.jpeg" },
+    ],
+  },
+  {
+    id: 13,
+    name: "Silver Shower",
+    img: "/images/drops/drop_thirteen.webp",
+    price: 2.5,
+    today: true,
+    owners: [
+      { username: "Danang Wicaksono", img: "./images/user/user_danang.jpeg" },
+      { username: "Godisable Jacob", img: "./images/user/user_godisable.jpeg" },
+    ],
+  },
+  {
+    id: 14,
+    name: "Pile of Desert",
+    img: "/images/drops/drop_fourteen.webp",
+    price: 0.1,
+    today: false,
+    date: "02 Jun 2023",
+    owners: [
+      {
+        username: "Andrea Piacquadio",
+        img: "./images/user/user_andrea.webp",
+      },
+      {
+        username: "Hamann La",
+        img: "./images/user/user_hamann.jpeg",
+      },
+    ],
+  },
+  {
+    id: 15,
+    name: "Shake Hand",
+    img: "/images/drops/drop_fifteen.webp",
+    price: 0.001,
+    today: false,
+    date: "07 Jun 2023",
+    owners: [
+      { username: "Noelle Otto", img: "./images/user/user_noelle.webp" },
+    ],
+  },
+  {
+    id: 16,
+    name: "Pux Cubes",
+    img: "/images/drops/drop_sixteen.webp",
+    price: 0.5,
+    today: false,
+    date: "12 Jun 2023",
+    owners: [
+      {
+        username: "Hamann La",
+        img: "./images/user/user_hamann.jpeg",
+      },
+      {
+        username: "Royal Anwar",
+        img: "./images/user/user_royal.jpeg",
+      },
+      {
+        username: "Andrea Piacquadio",
+        img: "./images/user/user_andrea.webp",
+      },
+    ],
+  },
+  {
+    id: 17,
+    name: "Greedow of Everything",
+    img: "/images/drops/drop_seventeen.jpeg",
+    price: 1,
+    today: false,
+    date: "17 Jun 2023",
+    owners: [
+      {
+        username: "Royal Anwar",
+        img: "./images/user/user_royal.jpeg",
+      },
+      {
+        username: "Andrea Piacquadio",
+        img: "./images/user/user_andrea.webp",
+      },
+    ],
+  },
+  {
+    id: 18,
+    name: "Color of Bom",
+    img: "/images/drops/drop_eighteen.jpeg",
+    price: 1,
+    today: true,
+    owners: [
+      {
+        username: "Royal Anwar",
+        img: "./images/user/user_royal.jpeg",
+      },
+      {
+        username: "Andrea Piacquadio",
+        img: "./images/user/user_andrea.webp",
+      },
+    ],
+  },
+  {
+    id: 19,
+    name: "Lights and Shadows",
+    img: "/images/drops/drop_nineteen.webp",
+    price: 0.5,
+    today: false,
+    date: "30 Jun 2023",
+    owners: [
+      {
+        username: "Hasibullah Zhowandai",
+        img: "./images/user/user_hasibullah.jpeg",
+      },
+    ],
+  },
+  {
+    id: 20,
+    name: "Lights and Crimes",
+    img: "/images/drops/drop_twenty.webp",
+    price: 0.5,
+    today: true,
+    owners: [
+      {
+        username: "Dazzle Jam",
+        img: "./images/user/user_dazzle.jpeg",
+      },
+      {
+        username: "Hasibullah Zhowandai",
+        img: "./images/user/user_hasibullah.jpeg",
+      },
+    ],
+  },
+  {
+    id: 21,
+    name: "My my money",
+    img: "/images/drops/drop_twenty_one.jpeg",
+    price: 0.05,
+    today: false,
+    date: "05 Jul 2023",
+    owners: [
+      {
+        username: "Danang Wicaksono",
+        img: "./images/user/user_danang.jpeg",
+      },
+    ],
+  },
+  {
+    id: 22,
+    name: "Solidity",
+    img: "/images/drops/drop_twenty_two.jpeg",
+    price: 0.025,
+    today: false,
+    date: "15 Jul 2023",
+    owners: [
+      {
+        username: "Danang Wicaksono",
+        img: "./images/user/user_danang.jpeg",
+      },
+    ],
+  },
+  {
+    id: 23,
+    name: "Peace by piece",
+    img: "/images/drops/drop_twenty_three.webp",
+    price: 0.025,
+    today: true,
+    owners: [
+      {
+        username: "Danang Wicaksono",
+        img: "./images/user/user_danang.jpeg",
+      },
+    ],
+  },
+  {
+    id: 24,
+    name: "Material",
+    img: "/images/drops/drop_twenty_four.webp",
+    price: 1,
+    today: false,
+    date: "25 Jul 2023",
+    owners: [
+      { username: "Godisable Jacob", img: "./images/user/user_godisable.jpeg" },
+      {
+        username: "Danang Wicaksono",
+        img: "./images/user/user_danang.jpeg",
+      },
+    ],
   },
 ];
