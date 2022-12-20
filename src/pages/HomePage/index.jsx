@@ -3,7 +3,7 @@ import HomePageHero from "../../components/MarketplaceLayout/Hero/HomePageHero";
 import RecommendedCreatorsContainer from "../../components/Container/RecommendedCreatorsContainer";
 import CarouselWraper from "../../components/Wrapper/CarouselWraper";
 import LoadMoreWrapper from "../../components/Wrapper/LoadMoreWrapper";
-
+import TopSellers from "../../components/Wrapper/TopSellers";
 import { data } from "../../data/index";
 
 const HomePage = () => {
@@ -15,6 +15,7 @@ const HomePage = () => {
           return <RecommendedCreatorsContainer item={item} key={index} />;
         })}
       </CarouselWraper>
+      <TopSellers />
       <LoadMoreWrapper title="Today's picks" mode="todays_pick" />
     </Layout>
   );
