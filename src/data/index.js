@@ -2,11 +2,11 @@ export const data = [
   {
     user: {
       username: "Andrea Piacquadio",
-      img: "./images/user/user_andrea.webp",
+      img: "/images/user/user_andrea.webp",
       followers: 102,
       following: 78,
       address: "0xC85C8CD8BF177A05A926CAFFE58EC7C07167C101",
-      bg: "./images/user/bg_one.webp",
+      bg: "/images/user/bg_one.webp",
     },
     nfts: [
       {
@@ -17,7 +17,7 @@ export const data = [
         likes: 16,
         price: 0.5,
         tags: [""],
-        img: "./images/nft/nft_one.jpg",
+        img: "/images/nft/nft_one.jpg",
         recommended_creators: false,
         todays_pick: true,
         address: "0xD8045B2620F75FCAE4B5D96558D26CEA8E21F87F",
@@ -27,11 +27,11 @@ export const data = [
   {
     user: {
       username: "Hasibullah Zhowandai",
-      img: "./images/user/user_hasibullah.jpeg",
+      img: "/images/user/user_hasibullah.jpeg",
       followers: 210,
       following: 350,
       address: "0x514765350F5B8475B879CD432E8B7564C5ADDC0A",
-      bg: "./images/user/bg_two.webp",
+      bg: "/images/user/bg_two.webp",
     },
     nfts: [
       {
@@ -42,7 +42,7 @@ export const data = [
         likes: 35,
         price: 0.5,
         tags: [""],
-        img: "./images/nft/nft_two.jpg",
+        img: "/images/nft/nft_two.jpg",
         recommended_creators: true,
         todays_pick: false,
         address: "0x59AD5225322D4A8925688CC9D21361E337D085C9",
@@ -52,11 +52,11 @@ export const data = [
   {
     user: {
       username: "Dazzle Jam",
-      img: "./images/user/user_dazzle.jpeg",
+      img: "/images/user/user_dazzle.jpeg",
       followers: 10,
       following: 1,
       address: "0x382B29925D24D63B0846E09A3666E1288D575475",
-      bg: "./images/user/bg_three.webp",
+      bg: "/images/user/bg_three.webp",
     },
     nfts: [
       {
@@ -67,7 +67,7 @@ export const data = [
         likes: 30,
         price: 1.1,
         tags: [""],
-        img: "./images/nft/nft_three.jpg",
+        img: "/images/nft/nft_three.jpg",
         recommended_creators: false,
         todays_pick: true,
         address: "0x665D2155B91DB60C6CFFF7B3AED1B90FFA8CB531",
@@ -77,11 +77,11 @@ export const data = [
   {
     user: {
       username: "Danang Wicaksono",
-      img: "./images/user/user_danang.jpeg",
+      img: "/images/user/user_danang.jpeg",
       followers: 2000,
       following: 50,
       address: "0x5FE9FC4FBD8CBF6D96A2DCEAB6E15AA9F37CE73E",
-      bg: "./images/user/bg_four.jpeg",
+      bg: "/images/user/bg_four.jpeg",
     },
     nfts: [
       {
@@ -92,7 +92,7 @@ export const data = [
         likes: 20,
         price: 0.05,
         tags: [""],
-        img: "./images/nft/nft_four.jpg",
+        img: "/images/nft/nft_four.jpg",
         recommended_creators: false,
         todays_pick: true,
         address: "0xE9F2402DA660104DE01A7785D27A96A4370D3B6F",
@@ -102,11 +102,11 @@ export const data = [
   {
     user: {
       username: "Hamann La",
-      img: "./images/user/user_hamann.jpeg",
+      img: "/images/user/user_hamann.jpeg",
       followers: 33,
       following: 46,
       address: "0xE491B99DB7E8C5C76D1FC06A3FBE991C9312146F",
-      bg: "./images/user/bg_five.webp",
+      bg: "/images/user/bg_five.webp",
     },
     nfts: [
       {
@@ -117,7 +117,7 @@ export const data = [
         likes: 100,
         price: 0.15,
         tags: [""],
-        img: "./images/nft/nft_five.jpg",
+        img: "/images/nft/nft_five.jpg",
         recommended_creators: true,
         todays_pick: false,
         address: "0x7C03CF2991BB0B4FF7797025C510476C29041772",
@@ -127,11 +127,11 @@ export const data = [
   {
     user: {
       username: "Godisable Jacob",
-      img: "./images/user/user_godisable.jpeg",
+      img: "/images/user/user_godisable.jpeg",
       followers: 5369,
       following: 10,
       address: "0xA3EE6EE4B096A692F9214AEBC7A159B6D1A62452",
-      bg: "./images/user/bg_six.jpeg",
+      bg: "/images/user/bg_six.jpeg",
     },
     nfts: [
       {
@@ -142,7 +142,7 @@ export const data = [
         likes: 1273,
         price: 2.5,
         tags: [""],
-        img: "./images/nft/nft_six.jpg",
+        img: "/images/nft/nft_six.jpg",
         recommended_creators: true,
         todays_pick: true,
         address: "0x107EE3FFAEB0C6D3F29F0DA33FEB88706961E2DE",
@@ -152,11 +152,11 @@ export const data = [
   {
     user: {
       username: "Noelle Otto",
-      img: "./images/user/user_noelle.webp",
+      img: "/images/user/user_noelle.webp",
       followers: 235,
       following: 190,
       address: "0x29AF74D543A07E377DB1B347B8CB85F0200BF6D4",
-      bg: "./images/user/bg_seven.jpeg",
+      bg: "/images/user/bg_seven.jpeg",
     },
     nfts: [
       {
@@ -167,7 +167,7 @@ export const data = [
         likes: 13,
         price: 0.135,
         tags: [""],
-        img: "./images/nft/nft_seven.jpg",
+        img: "/images/nft/nft_seven.jpg",
         recommended_creators: true,
         todays_pick: true,
         address: "0xC8C8D07772159D3EA145DF60AC5B09E5D265957E",
@@ -177,11 +177,11 @@ export const data = [
   {
     user: {
       username: "Royal Anwar",
-      img: "./images/user/user_royal.jpeg",
+      img: "/images/user/user_royal.jpeg",
       followers: 87,
       following: 92,
       address: "0xB47BB0CAA91EDCE085A053586841ACAC6E39C600",
-      bg: "./images/user/bg_eight.webp",
+      bg: "/images/user/bg_eight.webp",
     },
     nfts: [
       {
@@ -192,7 +192,7 @@ export const data = [
         likes: 45,
         price: 1.5,
         tags: [""],
-        img: "./images/nft/nft_eight.jpg",
+        img: "/images/nft/nft_eight.jpg",
         recommended_creators: true,
         todays_pick: true,
         address: "0x62E47EDBF450FB955F65BD35A158D7B15ED99790",
@@ -277,7 +277,7 @@ export const drops = [
     img: "/images/drops/drop_one.webp",
     price: 0.1,
     today: true,
-    owners: [{ username: "Royal Anwar", img: "./images/user/user_royal.jpeg" }],
+    owners: [{ username: "Royal Anwar", img: "/images/user/user_royal.jpeg" }],
   },
   {
     id: 2,
@@ -289,11 +289,11 @@ export const drops = [
     owners: [
       {
         username: "Andrea Piacquadio",
-        img: "./images/user/user_andrea.webp",
+        img: "/images/user/user_andrea.webp",
       },
       {
         username: "Royal Anwar",
-        img: "./images/user/user_royal.jpeg",
+        img: "/images/user/user_royal.jpeg",
       },
     ],
   },
@@ -307,7 +307,7 @@ export const drops = [
     owners: [
       {
         username: "Godisable Jacob",
-        img: "./images/user/user_godisable.jpeg",
+        img: "/images/user/user_godisable.jpeg",
       },
     ],
   },
@@ -320,11 +320,11 @@ export const drops = [
     owners: [
       {
         username: "Hasibullah Zhowandai",
-        img: "./images/user/user_hasibullah.jpeg",
+        img: "/images/user/user_hasibullah.jpeg",
       },
       {
         username: "Andrea Piacquadio",
-        img: "./images/user/user_andrea.webp",
+        img: "/images/user/user_andrea.webp",
       },
     ],
   },
@@ -337,7 +337,7 @@ export const drops = [
     owners: [
       {
         username: "Dazzle Jam",
-        img: "./images/user/user_dazzle.jpeg",
+        img: "/images/user/user_dazzle.jpeg",
       },
     ],
   },
@@ -351,7 +351,7 @@ export const drops = [
     owners: [
       {
         username: "Hamann La",
-        img: "./images/user/user_hamann.jpeg",
+        img: "/images/user/user_hamann.jpeg",
       },
     ],
   },
@@ -365,11 +365,11 @@ export const drops = [
     owners: [
       {
         username: "Hamann La",
-        img: "./images/user/user_hamann.jpeg",
+        img: "/images/user/user_hamann.jpeg",
       },
       {
         username: "Andrea Piacquadio",
-        img: "./images/user/user_andrea.webp",
+        img: "/images/user/user_andrea.webp",
       },
     ],
   },
@@ -381,7 +381,7 @@ export const drops = [
     today: false,
     date: "01 May 2023",
     owners: [
-      { username: "Noelle Otto", img: "./images/user/user_noelle.webp" },
+      { username: "Noelle Otto", img: "/images/user/user_noelle.webp" },
     ],
   },
   {
@@ -392,7 +392,7 @@ export const drops = [
     today: false,
     date: "04 May 2023",
     owners: [
-      { username: "Noelle Otto", img: "./images/user/user_noelle.webp" },
+      { username: "Noelle Otto", img: "/images/user/user_noelle.webp" },
     ],
   },
   {
@@ -403,7 +403,7 @@ export const drops = [
     today: false,
     date: "06 May 2023",
     owners: [
-      { username: "Noelle Otto", img: "./images/user/user_noelle.webp" },
+      { username: "Noelle Otto", img: "/images/user/user_noelle.webp" },
     ],
   },
   {
@@ -413,8 +413,8 @@ export const drops = [
     price: 1,
     today: true,
     owners: [
-      { username: "Dazzle Jam", img: "./images/user/user_dazzle.jpeg" },
-      { username: "Godisable Jacob", img: "./images/user/user_godisable.jpeg" },
+      { username: "Dazzle Jam", img: "/images/user/user_dazzle.jpeg" },
+      { username: "Godisable Jacob", img: "/images/user/user_godisable.jpeg" },
     ],
   },
   {
@@ -425,7 +425,7 @@ export const drops = [
     today: false,
     date: "25 May 2023",
     owners: [
-      { username: "Godisable Jacob", img: "./images/user/user_godisable.jpeg" },
+      { username: "Godisable Jacob", img: "/images/user/user_godisable.jpeg" },
     ],
   },
   {
@@ -435,8 +435,8 @@ export const drops = [
     price: 2.5,
     today: true,
     owners: [
-      { username: "Danang Wicaksono", img: "./images/user/user_danang.jpeg" },
-      { username: "Godisable Jacob", img: "./images/user/user_godisable.jpeg" },
+      { username: "Danang Wicaksono", img: "/images/user/user_danang.jpeg" },
+      { username: "Godisable Jacob", img: "/images/user/user_godisable.jpeg" },
     ],
   },
   {
@@ -449,11 +449,11 @@ export const drops = [
     owners: [
       {
         username: "Andrea Piacquadio",
-        img: "./images/user/user_andrea.webp",
+        img: "/images/user/user_andrea.webp",
       },
       {
         username: "Hamann La",
-        img: "./images/user/user_hamann.jpeg",
+        img: "/images/user/user_hamann.jpeg",
       },
     ],
   },
@@ -465,7 +465,7 @@ export const drops = [
     today: false,
     date: "07 Jun 2023",
     owners: [
-      { username: "Noelle Otto", img: "./images/user/user_noelle.webp" },
+      { username: "Noelle Otto", img: "/images/user/user_noelle.webp" },
     ],
   },
   {
@@ -478,15 +478,15 @@ export const drops = [
     owners: [
       {
         username: "Hamann La",
-        img: "./images/user/user_hamann.jpeg",
+        img: "/images/user/user_hamann.jpeg",
       },
       {
         username: "Royal Anwar",
-        img: "./images/user/user_royal.jpeg",
+        img: "/images/user/user_royal.jpeg",
       },
       {
         username: "Andrea Piacquadio",
-        img: "./images/user/user_andrea.webp",
+        img: "/images/user/user_andrea.webp",
       },
     ],
   },
@@ -500,11 +500,11 @@ export const drops = [
     owners: [
       {
         username: "Royal Anwar",
-        img: "./images/user/user_royal.jpeg",
+        img: "/images/user/user_royal.jpeg",
       },
       {
         username: "Andrea Piacquadio",
-        img: "./images/user/user_andrea.webp",
+        img: "/images/user/user_andrea.webp",
       },
     ],
   },
@@ -517,11 +517,11 @@ export const drops = [
     owners: [
       {
         username: "Royal Anwar",
-        img: "./images/user/user_royal.jpeg",
+        img: "/images/user/user_royal.jpeg",
       },
       {
         username: "Andrea Piacquadio",
-        img: "./images/user/user_andrea.webp",
+        img: "/images/user/user_andrea.webp",
       },
     ],
   },
@@ -535,7 +535,7 @@ export const drops = [
     owners: [
       {
         username: "Hasibullah Zhowandai",
-        img: "./images/user/user_hasibullah.jpeg",
+        img: "/images/user/user_hasibullah.jpeg",
       },
     ],
   },
@@ -548,11 +548,11 @@ export const drops = [
     owners: [
       {
         username: "Dazzle Jam",
-        img: "./images/user/user_dazzle.jpeg",
+        img: "/images/user/user_dazzle.jpeg",
       },
       {
         username: "Hasibullah Zhowandai",
-        img: "./images/user/user_hasibullah.jpeg",
+        img: "/images/user/user_hasibullah.jpeg",
       },
     ],
   },
@@ -566,7 +566,7 @@ export const drops = [
     owners: [
       {
         username: "Danang Wicaksono",
-        img: "./images/user/user_danang.jpeg",
+        img: "/images/user/user_danang.jpeg",
       },
     ],
   },
@@ -580,7 +580,7 @@ export const drops = [
     owners: [
       {
         username: "Danang Wicaksono",
-        img: "./images/user/user_danang.jpeg",
+        img: "/images/user/user_danang.jpeg",
       },
     ],
   },
@@ -593,7 +593,7 @@ export const drops = [
     owners: [
       {
         username: "Danang Wicaksono",
-        img: "./images/user/user_danang.jpeg",
+        img: "/images/user/user_danang.jpeg",
       },
     ],
   },
@@ -605,10 +605,10 @@ export const drops = [
     today: false,
     date: "25 Jul 2023",
     owners: [
-      { username: "Godisable Jacob", img: "./images/user/user_godisable.jpeg" },
+      { username: "Godisable Jacob", img: "/images/user/user_godisable.jpeg" },
       {
         username: "Danang Wicaksono",
-        img: "./images/user/user_danang.jpeg",
+        img: "/images/user/user_danang.jpeg",
       },
     ],
   },
