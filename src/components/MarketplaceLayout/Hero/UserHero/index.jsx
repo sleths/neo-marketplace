@@ -5,6 +5,10 @@ import styles from "./styles.module.scss";
 
 const UserHero = ({ user }) => {
   const { bg, img, username, followers, following, address } = user;
+
+  const firstAddressSlice = address.slice(0, 7);
+  const lastAddressSlice = address.slice(-5);
+
   return (
     <header className={styles.header}>
       <img src={bg} alt="" />
@@ -20,6 +24,10 @@ const UserHero = ({ user }) => {
             <strong>{following}</strong> <span>following</span>
           </p>
         </div>
+        <p className={`center ${styles.address}`}>
+          <Eth />
+          {`${firstAddressSlice}...${lastAddressSlice}`}
+        </p>
         <div className={`center ${styles.btnContainer}`}>
           <button className={`center ${styles.message}`}>
             <MailOutlineIcon />
@@ -29,10 +37,6 @@ const UserHero = ({ user }) => {
             <MoreHorizIcon />
           </button>
         </div>
-        {/* <p className="center">
-          <Eth />
-          {address}
-        </p> */}
       </article>
     </header>
   );

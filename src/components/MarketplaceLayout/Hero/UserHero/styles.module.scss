@@ -43,6 +43,11 @@
   border: 2px solid white;
 }
 
+.address {
+  text-transform: lowercase;
+  color: var(--dark-gray);
+}
+
 .btnContainer {
   position: absolute;
   top: 20px;
@@ -50,15 +55,20 @@
 
   & button {
     background-color: white;
-    border: 1px solid var(--med-gray);
-    font-weight: 700;
-    font-size: 14px;
     justify-content: center;
     height: 46px;
-    gap: 8px;
   }
 }
 
+.address,
+.btnContainer button {
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid var(--med-gray);
+  gap: 8px;
+}
+
+.address,
 .message {
   border-radius: 24px;
   padding: 12px 24px;
