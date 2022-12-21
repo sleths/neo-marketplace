@@ -12,7 +12,7 @@ const UserHero = ({ user }) => {
   return (
     <header className={styles.header}>
       <img src={bg} alt="" />
-
+      {/* User Info */}
       <article className="center">
         <img src={img} alt={username} className={styles.userImg} />
         <h1>{username}</h1>
@@ -24,10 +24,15 @@ const UserHero = ({ user }) => {
             <strong>{following}</strong> <span>following</span>
           </p>
         </div>
-        <p className={`center ${styles.address}`}>
-          <Eth />
-          {`${firstAddressSlice}...${lastAddressSlice}`}
-        </p>
+        <div className={styles.addressContainer}>
+          <p className={`center ${styles.address}`}>
+            <Eth />
+            {`${firstAddressSlice}...${lastAddressSlice}`}
+          </p>
+          <p className={styles.longAddress}>{address}</p>
+        </div>
+
+        {/* Contact Buttons */}
         <div className={`center ${styles.btnContainer}`}>
           <button className={`center ${styles.message}`}>
             <MailOutlineIcon />
