@@ -11,7 +11,7 @@ const LoadMoreWrapper = ({ title, mode }) => {
   const [showItemCount, setShowItemCount] = useState(4);
   // Select today's pick nfts
   const todaysNftsArr = data.filter((item) =>
-    item["nfts"].some((x) => x.todays_pick === true)
+    item.user["nfts"].some((x) => x.todays_pick === true)
   );
   // Select drops not previewed today
   const dropsForFuture = drops.filter((drop) => drop.today === false);
@@ -24,8 +24,6 @@ const LoadMoreWrapper = ({ title, mode }) => {
   const [showData, setShowData] = useState(dataBasedOnMode);
 
   const counter = () => setShowItemCount((prev) => prev + 1);
-
-  console.log(dataBasedOnMode);
 
   useEffect(() => setShowData(sliceData(dataBasedOnMode)), [showItemCount]);
 

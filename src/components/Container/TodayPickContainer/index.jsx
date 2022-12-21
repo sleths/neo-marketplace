@@ -9,7 +9,7 @@ import styles from "./styles.module.scss";
 const TodayPickContainer = ({ item }) => {
   return (
     <>
-      {item.nfts.map((nft) => (
+      {item.user.nfts.map((nft) => (
         <section className={`center ${styles.container}`}>
           <img className={styles.nft} src={nft.img} alt={nft.title} />
           <LikeTag value={nft.likes} />

@@ -5,9 +5,12 @@
   width: 100%;
   max-width: 410px;
   
-  & h3 {
+  & a {
     font-size: 0.9rem;
     margin-bottom: 0.3rem;
+    display: inline-block;
+    color: black;
+    font-weight: 700;
   }
 
   & .percent {

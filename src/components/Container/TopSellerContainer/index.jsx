@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 
 const TopSellerContainer = ({ seller }) => {
@@ -6,7 +7,7 @@ const TopSellerContainer = ({ seller }) => {
       <p className={styles.sellerID}>{seller.id}</p>
       <img src={seller.img} alt={seller.name} />
       <article>
-        <h3>{seller.name}</h3>
+        <Link to="/stats">{seller.name}</Link>
         <p>{`$${seller.value.toFixed(2)}`}</p>
       </article>
       <p className={styles.percent}>{`+${seller.percent}%`}</p>

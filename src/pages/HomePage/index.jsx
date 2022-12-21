@@ -12,11 +12,11 @@ const HomePage = () => {
       <HomePageHero />
       <CarouselWraper title="Recommended creators">
         {data.map((item, index) => {
-          return <RecommendedCreatorsContainer item={item} key={index} />;
+          return <RecommendedCreatorsContainer item={item.user} key={index} />;
         })}
       </CarouselWraper>
       <TopSellers />
-      <LoadMoreWrapper title="Today's picks" mode="todays_pick" />
+       <LoadMoreWrapper title="Today's picks" mode="todays_pick" />
     </Layout>
   );
 };
