@@ -1,0 +1,16 @@
+.container {
+  padding: 24px;
+
+  & div {
+      flex-direction: column;
+  }
+}
+
+.nftImg {
+  width: 100%;
+  max-width: 736px;
+  max-height: 736px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
