@@ -60,7 +60,7 @@ export const data = [
       nfts: [
         {
           id: 3,
-          title: "Lorr’s Ad Issues",
+          title: "Lorr's Ad Issues",
           collection: "Irene Sotelo",
           description: "Description",
           likes: 30,
