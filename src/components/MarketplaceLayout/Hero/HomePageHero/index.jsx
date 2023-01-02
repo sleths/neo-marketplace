@@ -16,18 +16,19 @@ const HomePageHero = () => {
           independent creators worldwide.
         </p>
         <div className={styles.inputContainer}>
+          <input
+            type="text"
+            id="search"
+            value={search}
+            onChange={handleChange}
+            autoComplete="off"
+          />
           <label
             htmlFor="search"
             className={search === "" ? styles.empty : styles.full}
           >
             Type to search
           </label>
-          <input
-            type="text"
-            id="search"
-            value={search}
-            onChange={handleChange}
-          />
           <button>
             <SearchIcon />
           </button>

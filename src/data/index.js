@@ -12,7 +12,8 @@ export const data = [
           id: 1,
           title: "Election Season",
           collection: "Irene Sotelo",
-          description: "Description",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet dictum nulla, id dignissim nunc placerat a. Curabitur nec rutrum felis.",
           likes: 16,
           price: 0.5,
           tags: [""],
@@ -37,7 +38,8 @@ export const data = [
           id: 2,
           title: "Wall of Season",
           collection: "Irene Sotelo",
-          description: "Description",
+          description:
+            "Vivamus dui lacus, accumsan rhoncus urna at, facilisis aliquet eros. Ut suscipit pharetra gravida. Nunc quis rutrum neque. Donec eros libero, porttitor vitae nisl pulvinar, laoreet interdum eros. Integer vel enim porta, condimentum enim at, molestie ipsum. Nulla facilisi.",
           likes: 35,
           price: 0.5,
           tags: [""],
@@ -62,7 +64,8 @@ export const data = [
           id: 3,
           title: "Lorr's Ad Issues",
           collection: "Irene Sotelo",
-          description: "Description",
+          description:
+            "Duis porttitor porta pellentesque. Proin feugiat eget mauris sed imperdiet. Fusce id semper urna. Duis tempus gravida semper. Etiam facilisis nisi nec finibus rhoncus. ",
           likes: 30,
           price: 1.1,
           tags: [""],
@@ -87,7 +90,8 @@ export const data = [
           id: 4,
           title: "You Fire",
           collection: "Irene Sotelo",
-          description: "Description",
+          description:
+            "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi ut sollicitudin sapien, vel vehicula dui. Maecenas at magna mollis, maximus odio non, facilisis magna.",
           likes: 20,
           price: 0.05,
           tags: [""],
@@ -112,7 +116,8 @@ export const data = [
           id: 5,
           title: "Shib Toast",
           collection: "Diane Lansdowne",
-          description: "Description",
+          description:
+            "Ut non tristique urna. Praesent blandit quam dui, vel consectetur mi tincidunt a. Aliquam elit augue, faucibus efficitur blandit a, ornare id odio. ",
           likes: 100,
           price: 0.15,
           tags: [""],
@@ -137,7 +142,8 @@ export const data = [
           id: 6,
           title: "Applice",
           collection: "Diane Lansdowne",
-          description: "Description",
+          description:
+            "Aliquam erat volutpat. Praesent sodales condimentum lacus non scelerisque. Fusce non pretium turpis. Ut tempus dolor massa, eu maximus massa porta sed. Quisque velit mauris, consequat vitae ante eget, ornare tempor mi. Pellentesque euismod purus sed egestas rutrum.",
           likes: 1273,
           price: 2.5,
           tags: [""],
@@ -162,7 +168,8 @@ export const data = [
           id: 7,
           title: "Cubic Love",
           collection: "Diane Lansdowne",
-          description: "Description",
+          description:
+            "Praesent eu porttitor diam. Etiam venenatis risus sem, accumsan accumsan ante lacinia ac. Nunc nibh neque, vulputate mattis nulla semper, feugiat faucibus libero. Vestibulum vehicula elit quis orci ultricies sodales. Donec dui urna, placerat porta vehicula a, luctus quis dolor. Integer porttitor ipsum nulla. ",
           likes: 13,
           price: 0.135,
           tags: [""],
@@ -187,7 +194,8 @@ export const data = [
           id: 8,
           title: "Insider Open Door",
           collection: "Diane Lansdowne",
-          description: "Description",
+          description:
+            "Mauris ac leo nec est congue posuere. Sed tincidunt diam quis arcu consectetur dignissim. Donec ut lorem posuere, laoreet risus ac, ullamcorper eros. Ut ultrices nunc et libero euismod elementum. Nulla commodo vestibulum congue. Donec nec enim turpis.",
           likes: 45,
           price: 1.5,
           tags: [""],

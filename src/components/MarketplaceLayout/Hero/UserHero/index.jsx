@@ -1,13 +1,10 @@
-import { ReactComponent as Eth } from "../../../../assets/icons/eth.svg";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import styles from "./styles.module.scss";
+import AddressTag from "../../../Tag/AddressTag";
 
 const UserHero = ({ user }) => {
   const { bg, img, username, followers, following, address } = user;
-
-  const firstAddressSlice = address.slice(0, 7);
-  const lastAddressSlice = address.slice(-5);
 
   return (
     <header className={styles.header}>
@@ -24,13 +21,7 @@ const UserHero = ({ user }) => {
             <strong>{following}</strong> <span>following</span>
           </p>
         </div>
-        <div className={styles.addressContainer}>
-          <p className={`center ${styles.address}`}>
-            <Eth />
-            {`${firstAddressSlice}...${lastAddressSlice}`}
-          </p>
-          <p className={styles.longAddress}>{address}</p>
-        </div>
+        <AddressTag address={address} />
 
         {/* Contact Buttons */}
         <div className={`center ${styles.btnContainer}`}>

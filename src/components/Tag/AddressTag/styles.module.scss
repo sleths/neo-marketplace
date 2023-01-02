@@ -1,0 +1,51 @@
+.address {
+  text-transform: lowercase;
+  color: var(--dark-gray);
+  cursor: default;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid var(--med-gray);
+  gap: 8px;
+  border-radius: 24px;
+  padding: 12px 24px;
+  max-width: fit-content;
+}
+
+.addressContainer {
+  position: relative;
+
+  &:hover .longAddress {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.longAddress,
+.longAddress::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.longAddress {
+  opacity: 0;
+  pointer-events: none;
+  background-color: black;
+  color: white;
+  bottom: -44px;
+  font-size: 10px;
+  padding: 8px;
+  border-radius: 12px;
+  transition: opacity 0.3s ease;
+
+  &::after {
+    content: "";
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #000000;
+    clear: both;
+  }
+}

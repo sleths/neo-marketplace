@@ -26,18 +26,19 @@ const Footer = () => {
             <div className={styles.emailContainer}>
               <h6>Subscribe to updates</h6>
               <div>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={handleChange}
+                  autoComplete="off"
+                />
                 <label
                   htmlFor="email"
                   className={email === "" ? styles.empty : styles.full}
                 >
                   Enter your e-mail
                 </label>
-                <input
-                  type="email"
-                  id="email"
-                  value={email}
-                  onChange={handleChange}
-                />
                 <MailOutlineIcon />
               </div>
             </div>

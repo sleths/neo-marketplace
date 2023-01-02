@@ -1,16 +1,86 @@
 .container {
   padding: 24px;
 
-  & div {
-      flex-direction: column;
+  & div,
+  article {
+    flex-direction: column;
+  }
+
+  & article {
+    text-align: left;
+    max-width: 450px;
+
+    & h1,
+    > p {
+      width: 100%;
+    }
+    & section {
+      justify-content: space-between;
+      padding: 0 2rem;
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+
+  & .nftImg,
+  article {
+    width: 100%;
+    margin: 0 auto 2rem;
+
+    & > p {
+      font-size: 14px;
+      line-height: 1.75;
+      margin-top: 14px;
+    }
   }
 }
 
 .nftImg {
-  width: 100%;
   max-width: 736px;
   max-height: 736px;
   object-fit: cover;
   border-radius: 1rem;
-  margin: 0 auto;
+}
+
+.subTitle {
+  font-size: 12px;
+  color: var(--dark-gray);
+  margin-bottom: 4px;
+}
+
+.visibility strong {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .container article section {
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    & div {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    & article,
+    .nftImg {
+      margin: unset;
+    }
+
+    & article {
+      height: 100%;
+      & section {
+        padding: 0;
+      }
+    }
+  }
+  .visibility {
+    margin-bottom: 4rem;
+  }
 }

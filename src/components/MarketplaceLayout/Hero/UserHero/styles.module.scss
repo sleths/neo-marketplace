@@ -43,12 +43,6 @@
   border: 2px solid white;
 }
 
-.address {
-  text-transform: lowercase;
-  color: var(--dark-gray);
-  cursor: default;
-}
-
 .btnContainer {
   position: absolute;
   top: 20px;
@@ -61,7 +55,6 @@
   }
 }
 
-.address,
 .btnContainer button {
   font-weight: 700;
   font-size: 14px;
@@ -69,7 +62,6 @@
   gap: 8px;
 }
 
-.address,
 .message {
   border-radius: 24px;
   padding: 12px 24px;
@@ -78,43 +70,4 @@
 .more {
   border-radius: 50%;
   width: 46px;
-}
-
-.addressContainer {
-  position: relative;
-
-  &:hover .longAddress {
-    opacity: 1;
-    pointer-events: all;
-  }
-}
-
-.longAddress,
-.longAddress::after {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.longAddress {
-  opacity: 0;
-  pointer-events: none;
-  background-color: black;
-  color: white;
-  bottom: -44px;
-  font-size: 12px;
-  padding: 8px;
-  border-radius: 12px;
-  transition: opacity 0.3s ease;
-
-  &::after {
-    content: "";
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #000000;
-    clear: both;
-  }
 }

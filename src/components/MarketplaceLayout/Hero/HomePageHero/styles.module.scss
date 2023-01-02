@@ -68,6 +68,10 @@
     padding: 2rem 1.5rem;
     opacity: 0.75;
     box-shadow: 0px 20px 90px rgba(0, 0, 0, 0.115449);
+    
+    &:focus + label {
+      opacity: 0;
+    }
   }
 
   & button {
