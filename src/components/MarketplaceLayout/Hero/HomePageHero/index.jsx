@@ -1,11 +1,16 @@
 import { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import styles from "./styles.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const HomePageHero = () => {
   const [search, setSearch] = useState("");
 
+  let navigate = useNavigate();
+
   const handleChange = ({ target }) => setSearch(target.value);
+
+  const navigateSearch = () => navigate(`search/${search}`);
 
   return (
     <header className={`center ${styles.hero}`}>
@@ -29,7 +34,7 @@ const HomePageHero = () => {
           >
             Type to search
           </label>
-          <button>
+          <button onClick={navigateSearch}>
             <SearchIcon />
           </button>
         </div>

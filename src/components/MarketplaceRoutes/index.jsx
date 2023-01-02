@@ -4,6 +4,7 @@ import HomePage from "../../pages/HomePage";
 import NftPage from "../../pages/NftPage";
 import StatsPage from "../../pages/StatsPage";
 import UserPage from "../../pages/UserPage";
+import SearchPage from "../../pages/SearchPage";
 
 const MarketplaceRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const MarketplaceRoutes = () => {
       <Route path="/drops" element={<DropsPage />} />
       <Route path="/user/:address" element={<UserPage />} />
       <Route path="/nft/:address" element={<NftPage />} />
+      <Route path="/search/:value" element={<SearchPage />} />
     </Routes>
   );
 };

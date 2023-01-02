@@ -16,8 +16,8 @@ const DropContainer = ({ drop, mode }) => {
         <Eth /> <span>from</span> <strong>{`${drop.price} Eth`}</strong>
       </p>
       <div>
-        {drop.owners.map((owner) => (
-          <img src={owner.img} alt={owner.title} className={styles.userImg} />
+        {drop.owners.map((owner, index) => (
+          <img src={owner.img} alt={owner.title} className={styles.userImg} key={index} />
         ))}
       </div>
     </div>
