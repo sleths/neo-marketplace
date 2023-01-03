@@ -1,3 +1,5 @@
+import NotFoundContainer from "../components/Container/NotFoundContainer";
+
 export const pageLinks = [
   { text: "Explore", link: "/" },
   {
@@ -9,3 +11,9 @@ export const pageLinks = [
     link: "/drops",
   },
 ];
+
+export const switchRender = (variable, children) => {
+  if(variable === undefined) return <NotFoundContainer />
+  else return (children)
+
+}
