@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  flex-direction: column;
+  border-radius: 1rem;
+  flex-shrink: 0;
+  position: relative;
+  border: 1px solid var(--med-gray);
+
+  & p {
+    color: var(--dark-gray);
+    font-size: 14px;
+    line-height: 2.25;
+    margin-top: 0.75rem;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--med-gray);
+    border-bottom: 1px solid var(--med-gray);
+  }
+}
+
+.container .nft {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  height: 302px;
+  object-fit: cover;
+  pointer-events: none;
+  margin-bottom: 1rem;
+}
+
+.btn a {
+  justify-content: center;
+}
+
+.glitch {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 700;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 1500ms infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
