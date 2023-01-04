@@ -1,5 +1,24 @@
 .container {
     flex-direction: column;
+    margin-top: 2rem;
+    min-height: 40vh;
+}
+
+.relative {
+    position: relative;
+}
+
+.bookmark {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.text {
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
 
 @media screen and (min-width: 768px) {

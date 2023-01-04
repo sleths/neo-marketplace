@@ -2,9 +2,9 @@ import LiveTag from "../../Tag/LiveTag";
 import { ReactComponent as Eth } from "../../../assets/icons/eth.svg";
 import styles from "./styles.module.scss";
 
-const DropContainer = ({ drop, mode }) => {
+const DropContainer = ({ drop, mode, search = false }) => {
   return (
-    <div className={`center ${styles.container} ${styles[mode]}`}>
+    <div className={`center ${styles.container} ${styles[mode]} ${search ? styles.search : ""}`}>
       {mode === "today" ? (
         <LiveTag />
       ) : (
