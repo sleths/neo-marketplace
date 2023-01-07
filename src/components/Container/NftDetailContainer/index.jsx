@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 
@@ -11,16 +11,37 @@ const NftDetailContainer = ({ nft }) => {
   const { address } = useParams();
   const [bid, setBid] = useState(nft.price * 1265);
   const [value, setValue] = useState("");
-  const input = useRef();
-  const hour = useRef();
-  const minutes = useRef();
-  const seconds = useRef();
-  console.log(nft);
+
+  const countdownSecs = 54500;
+
+  const formatTime = (time) => {
+    let hours = Math.floor(time / 3600);
+    let minutes = Math.floor((time % 3600) / 60);
+    let seconds = Math.floor((time % 3600) % 60);
+
+    if (hours <= 10) hours = "0" + hours;
+    if (minutes <= 10) minutes = "0" + minutes;
+    if (seconds <= 10) seconds = "0" + seconds;
+
+    return `${hours} : ${minutes} : ${seconds}`;
+  };
+
+  const timer = useRef();
+
+  const [countdown, setCountdown] = useState(countdownSecs);
+
+  useEffect(() => {
+    timer.current = setInterval(() => {
+      setCountdown((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timer.current);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let value = e.target.bid.value
-    if(value === "") return
+    let value = e.target.bid.value;
+    if (value === "") return;
     setBid(value);
     setValue("");
   };
@@ -60,7 +81,7 @@ const NftDetailContainer = ({ nft }) => {
             <div>
               <h6>Auction ends in</h6>
               <p>
-                <strong>15:32:10</strong>
+                <strong>{formatTime(countdown)}</strong>
               </p>
             </div>
           </section>
