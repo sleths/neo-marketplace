@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 
@@ -8,6 +9,21 @@ import styles from "./styles.module.scss";
 
 const NftDetailContainer = ({ nft }) => {
   const { address } = useParams();
+  const [bid, setBid] = useState(nft.price * 1265);
+  const [value, setValue] = useState("");
+  const input = useRef();
+  const hour = useRef();
+  const minutes = useRef();
+  const seconds = useRef();
+  console.log(nft);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setBid(e.target.bid.value);
+    setValue("");
+  };
+
+  const handleChange = ({ target }) => setValue(target.value);
 
   return (
     <section className={styles.container}>
@@ -20,7 +36,7 @@ const NftDetailContainer = ({ nft }) => {
           </p>
           <PageTitle>{nft.title}</PageTitle>
           <p>{nft.description}</p>
-          <section className="center">
+          <section className={`center ${styles.address}`}>
             <div>
               <p className={styles.subTitle}>Creator</p>
               <AddressTag address={address} />
@@ -31,6 +47,36 @@ const NftDetailContainer = ({ nft }) => {
                 <strong>Etherium</strong>
               </p>
             </div>
+          </section>
+          <section className={`center ${styles.bid}`}>
+            <div>
+              <h6>Current bid</h6>
+              <p>
+                <strong>{`$${bid}`}</strong>
+              </p>
+            </div>
+            <div>
+              <h6>Auction ends in</h6>
+              <p>
+                <strong>15:32:10</strong>
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <form className={styles.form} onSubmit={handleSubmit}>
+              <label htmlFor="bid">Enter your bid</label>
+              <input
+                type="number"
+                placeholder={`Minimum bid $${nft.price * 1265}`}
+                id="bid"
+                min={Math.round(nft.price * 1265)}
+                onChange={handleChange}
+                value={value}
+                autoComplete="off"
+              />
+              <button type="submit">Submit your bid</button>
+            </form>
           </section>
         </article>
       </div>
