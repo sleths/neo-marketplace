@@ -290,7 +290,7 @@ export const top_sellers = [
     twentyFour: 5.9,
     seven: 29,
     floorPrice: 54.3,
-    address: "0x6f286981423aE422B51Ec969419A93c3F90F103C",
+    address: "0x64F0a06CF3a12c8BE2fA26Ee004A03F4814757D3",
     description:
       "Aliquam erat volutpat. Praesent sodales condimentum lacus non scelerisque. Fusce non pretium turpis. Ut tempus dolor massa, eu maximus massa porta sed. Quisque velit mauris, consequat vitae ante eget, ornare tempor mi. Pellentesque euismod purus sed egestas rutrum.",
   },
