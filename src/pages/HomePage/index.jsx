@@ -11,14 +11,14 @@ const HomePage = () => {
   return (
     <Layout>
       <HomePageHero />
+      <LoadMoreWrapper title="Today's picks" mode="todays_pick" />
+      <TopSellers />
+      <NewsContainer />
       <CarouselWraper title="Recommended creators">
         {data.map((item, index) => {
           return <RecommendedCreatorsContainer item={item.user} key={index} />;
         })}
       </CarouselWraper>
-      <TopSellers />
-      <NewsContainer />
-      <LoadMoreWrapper title="Today's picks" mode="todays_pick" />
     </Layout>
   );
 };
