@@ -31,11 +31,11 @@ const LoadMoreWrapper = ({ title, mode }) => {
     <section className="wrapper">
       <SectionTitle>{title}</SectionTitle>
       <div className={`center ${styles.container}`}>
-        {showData.map((item) =>
+        {showData.map((item, index) =>
           mode === "todays_pick" ? (
-            <TodayPickContainer item={item} key={item.id} />
+            <TodayPickContainer item={item} key={index} />
           ) : (
-            <DropContainer mode="future" drop={item} key={item.id} />
+            <DropContainer mode="future" drop={item} key={index} />
           )
         )}
       </div>

@@ -9,7 +9,10 @@ import styles from "./styles.module.scss";
 
 const NftDetailContainer = ({ nft }) => {
   const { address } = useParams();
-  const [bid, setBid] = useState(nft.price * 1265);
+
+  const price = nft.price || nft.floorPrice;
+
+  const [bid, setBid] = useState(price * 1265);
   const [value, setValue] = useState("");
 
   const countdownSecs = 54500;
@@ -57,7 +60,7 @@ const NftDetailContainer = ({ nft }) => {
             <RemoveRedEyeOutlinedIcon />
             <strong> {`${124 + nft.id}k`}</strong>
           </p>
-          <PageTitle>{nft.title}</PageTitle>
+          <PageTitle>{nft.title || nft.name}</PageTitle>
           <p>{nft.description}</p>
           <section className={`center ${styles.address}`}>
             <div>
@@ -91,9 +94,9 @@ const NftDetailContainer = ({ nft }) => {
               <label htmlFor="bid">Enter your bid</label>
               <input
                 type="number"
-                placeholder={`Minimum bid $${nft.price * 1265}`}
+                placeholder={`Minimum bid $${price * 1265}`}
                 id="bid"
-                min={Math.round(nft.price * 1265)}
+                min={Math.round(price * 1265)}
                 onChange={handleChange}
                 value={value}
                 autoComplete="off"

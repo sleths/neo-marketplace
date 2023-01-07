@@ -7,6 +7,7 @@ import UserPage from "../../pages/UserPage";
 import SearchPage from "../../pages/SearchPage";
 import NotFoundPage from "../../pages/NotFoundPage";
 import PostDetailsPage from "../../pages/PostDetailsPage";
+import TopSellerPage from "../../pages/TopSellerPage";
 
 const MarketplaceRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const MarketplaceRoutes = () => {
       <Route path="drops" element={<DropsPage />} />
       <Route path="user/:address" element={<UserPage />} />
       <Route path="nft/:address" element={<NftPage />} />
+      <Route path="top/:address" element={<TopSellerPage />} />
       <Route path="search/:value" element={<SearchPage />} />
       <Route path="post/:slug" element={<PostDetailsPage />} />
       <Route path="*" element={<NotFoundPage />} />

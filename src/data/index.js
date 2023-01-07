@@ -220,6 +220,9 @@ export const top_sellers = [
     twentyFour: 10,
     seven: 18.9,
     floorPrice: 4915,
+    address: "0x93cd6E98f6A83dD16640f52bcafAdeDB7EBF75bd",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet dictum nulla, id dignissim nunc placerat a. Curabitur nec rutrum felis.",
   },
   {
     id: 2,
@@ -231,6 +234,9 @@ export const top_sellers = [
     twentyFour: 8.3,
     seven: 18.6,
     floorPrice: 99.1,
+    address: "0xc03f546B5Bed5b504eBf1847cfD96f06DF56718e",
+    description:
+      "Vivamus dui lacus, accumsan rhoncus urna at, facilisis aliquet eros. Ut suscipit pharetra gravida. Nunc quis rutrum neque. Donec eros libero, porttitor vitae nisl pulvinar, laoreet interdum eros. Integer vel enim porta, condimentum enim at, molestie ipsum. Nulla facilisi.",
   },
   {
     id: 3,
@@ -242,6 +248,9 @@ export const top_sellers = [
     twentyFour: 14.9,
     seven: 24.5,
     floorPrice: 4310,
+    address: "0xB82019989C6555b3f578E8031d5a3afF46Cc8AA8",
+    description:
+      "Duis porttitor porta pellentesque. Proin feugiat eget mauris sed imperdiet. Fusce id semper urna. Duis tempus gravida semper. Etiam facilisis nisi nec finibus rhoncus. ",
   },
   {
     id: 4,
@@ -253,6 +262,9 @@ export const top_sellers = [
     twentyFour: 18.4,
     seven: 13,
     floorPrice: 3905,
+    address: "0x25d2D0F1EB0902323A729F972Ef31104e1a6Fe68",
+    description:
+      "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi ut sollicitudin sapien, vel vehicula dui. Maecenas at magna mollis, maximus odio non, facilisis magna.",
   },
   {
     id: 5,
@@ -264,6 +276,9 @@ export const top_sellers = [
     twentyFour: 15.6,
     seven: 19.3,
     floorPrice: 3750,
+    address: "0x6f286981423aE422B51Ec969419A93c3F90F103C",
+    description:
+      "Ut non tristique urna. Praesent blandit quam dui, vel consectetur mi tincidunt a. Aliquam elit augue, faucibus efficitur blandit a, ornare id odio. ",
   },
   {
     id: 6,
@@ -275,6 +290,9 @@ export const top_sellers = [
     twentyFour: 5.9,
     seven: 29,
     floorPrice: 54.3,
+    address: "0x6f286981423aE422B51Ec969419A93c3F90F103C",
+    description:
+      "Aliquam erat volutpat. Praesent sodales condimentum lacus non scelerisque. Fusce non pretium turpis. Ut tempus dolor massa, eu maximus massa porta sed. Quisque velit mauris, consequat vitae ante eget, ornare tempor mi. Pellentesque euismod purus sed egestas rutrum.",
   },
 ];
 

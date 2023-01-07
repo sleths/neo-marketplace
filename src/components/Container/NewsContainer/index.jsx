@@ -41,7 +41,7 @@ const NewsContainer = () => {
         <div className={`center ${styles.container}`}>
           {posts &&
             posts.map((post) => (
-              <article className="center">
+              <article className="center" key={post.title}>
                 <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
                 <h5>{post.title}</h5>
                 <p>{post.description}</p>

@@ -10,7 +10,7 @@ const TodayPickContainer = ({ item }) => {
   return (
     <>
       {item.user.nfts.map((nft) => (
-        <section className={`center ${styles.container}`}>
+        <section className={`center ${styles.container}`} key={nft.id}>
           <img className={styles.nft} src={nft.img} alt={nft.title} />
           <LikeTag value={nft.likes} />
           <UserTitle to={nft.address}>{nft.title}</UserTitle>
