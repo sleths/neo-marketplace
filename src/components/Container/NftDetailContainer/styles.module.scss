@@ -96,7 +96,7 @@
   & input {
     width: 100%;
     border: 1px solid var(--med-gray);
-    padding: 12px;
+    padding: 14px;
 
     &::placeholder {
       font-weight: 700;
@@ -107,13 +107,18 @@
 
   & button {
     position: absolute;
-    right: 6px;
-    top: 33.5px;
+    right: 5px;
+    top: 33px;
     background-color: var(--dark-purple);
-    padding: 8px 16px;
+    padding: 10px 16px;
     color: white;
     font-weight: 700;
     font-size: 14px;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
 

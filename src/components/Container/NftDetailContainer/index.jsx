@@ -19,7 +19,9 @@ const NftDetailContainer = ({ nft }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setBid(e.target.bid.value);
+    let value = e.target.bid.value
+    if(value === "") return
+    setBid(value);
     setValue("");
   };
 
