@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 
 const TopSellerContainer = ({ seller }) => {
-  console.log(seller)
   return (
     <section className={`center ${styles.col}`}>
       <p className={styles.sellerID}>{seller.id}</p>

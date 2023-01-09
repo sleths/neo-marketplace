@@ -8,6 +8,10 @@ import TopSellers from "../../components/Wrapper/TopSellers";
 import NewsContainer from "../../components/Container/NewsContainer";
 
 const HomePage = () => {
+  const recommended_creators = data
+    .map((item) => item.user.nfts.find((x) => x.recommended_creators === true))
+    .filter((item) => item !== undefined);
+
   return (
     <Layout>
       <HomePageHero />
@@ -15,8 +19,8 @@ const HomePage = () => {
       <TopSellers />
       <NewsContainer />
       <CarouselWraper title="Recommended creators">
-        {data.map((item, index) => {
-          return <RecommendedCreatorsContainer item={item.user} key={index} />;
+        {recommended_creators.map((item) => {
+          return <RecommendedCreatorsContainer nft={item} key={item.id} />;
         })}
       </CarouselWraper>
     </Layout>

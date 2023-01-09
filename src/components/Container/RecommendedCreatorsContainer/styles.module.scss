@@ -1,11 +1,16 @@
 .nftContainer {
-  max-width: 320px;
+  
   flex-direction: column;
   border-radius: 1rem;
   flex-shrink: 0;
   position: relative;
   border: 1px solid var(--med-gray);
   margin-bottom: 2rem;
+
+  & > section {
+    width: 320px;
+  }
+
 
   & article {
     position: relative;

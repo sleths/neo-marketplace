@@ -10,9 +10,9 @@ import styles from "./styles.module.scss";
 const LoadMoreWrapper = ({ title, mode }) => {
   const [showItemCount, setShowItemCount] = useState(4);
   // Select today's pick nfts
-  const todaysNftsArr = data.filter((item) =>
-    item.user["nfts"].some((x) => x.todays_pick === true)
-  );
+  const todaysNftsArr = data
+    .map((item, index) => item.user.nfts.find((x) => x.todays_pick === true))
+    .filter((item) => item !== undefined);
   // Select drops not previewed today
   const dropsForFuture = drops.filter((drop) => drop.today === false);
 
@@ -33,7 +33,7 @@ const LoadMoreWrapper = ({ title, mode }) => {
       <div className={`center ${styles.container}`}>
         {showData.map((item, index) =>
           mode === "todays_pick" ? (
-            <TodayPickContainer item={item} key={index} />
+            <TodayPickContainer nft={item} key={index} />
           ) : (
             <DropContainer mode="future" drop={item} key={index} />
           )
