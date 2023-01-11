@@ -19,17 +19,17 @@ const TodayPickContainer = ({ nft }) => {
           {`${nft.price} Eth`}
         </strong>
       </div>
-     {/*  <div className={`center ${styles.user}`}>
+      <div className={`center ${styles.user}`}>
         <p>Author</p>
         <div className="center">
           <img
-            src={nft.user.img}
-            alt={nft.user.username}
+            src={nft.user_img}
+            alt={nft.username}
             className={styles.userImg}
           />
-          <Link to={`/user/${nft.user.address}`}>{nft.user.username}</Link>
+          <Link to={`/user/${nft.user_address}`}>{nft.username}</Link>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };
