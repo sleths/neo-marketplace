@@ -1,0 +1,89 @@
+.tagContainer {
+  overflow-x: scroll;
+  gap: 1rem;
+  padding: 1rem 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: center;
+
+  /* &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #cfdbd5;
+    bottom: 1rem;
+  } */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.tag.active {
+  border-color: black;
+}
+
+.nftContainer {
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nft {
+  width: 100%;
+  max-width: 320px;
+  flex-direction: column;
+  border-radius: 1rem;
+  flex-shrink: 0;
+  position: relative;
+  border: 1px solid var(--med-gray);
+  margin: 0 auto;
+
+  & article {
+    position: relative;
+    text-align: center;
+    padding: 30px 76px 27px 70px;
+
+    & p {
+      color: var(--dark-gray);
+      font-size: 14px;
+      line-height: 2;
+    }
+  }
+}
+
+.nft img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  height: 302px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.price {
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .nftContainer {
+    flex-direction: row;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+}
