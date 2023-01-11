@@ -12,7 +12,7 @@ const RecommendedCreatorsContainer = ({ nft }) => {
         <img src={nft.img} alt={nft.title} className={styles.nft} />
         <LikeTag value={nft.likes} />
         <article>
-          <img src={nft.img} alt={nft.username} className={styles.userImg} />
+          <img src={nft.user_img} alt={nft.username} className={styles.userImg} />
           <UserTitle to={nft.address}>{nft.title}</UserTitle>
           <p>{`by ${nft.username}`}</p>
           <p className={`center ${styles.price}`}>
