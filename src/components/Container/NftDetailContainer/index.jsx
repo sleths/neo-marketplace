@@ -78,7 +78,7 @@ const NftDetailContainer = ({ nft }) => {
             <div>
               <h6>Current bid</h6>
               <p>
-                <strong>{`$${bid}`}</strong>
+                <strong>{`$${bid.toFixed(2)}`}</strong>
               </p>
             </div>
             <div>
@@ -94,7 +94,7 @@ const NftDetailContainer = ({ nft }) => {
               <label htmlFor="bid">Enter your bid</label>
               <input
                 type="number"
-                placeholder={`Minimum bid $${price * 1265}`}
+                placeholder={`Minimum bid $${(price * 1265).toFixed(2)}`}
                 id="bid"
                 min={Math.round(price * 1265)}
                 onChange={handleChange}
