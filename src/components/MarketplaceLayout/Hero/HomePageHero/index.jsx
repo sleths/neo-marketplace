@@ -10,7 +10,8 @@ const HomePageHero = () => {
 
   const handleChange = ({ target }) => setSearch(target.value);
 
-  const navigateSearch = () => navigate(`search/${search}`);
+  const navigateSearch = () =>
+    search.trim() !== "" && navigate(`search/${search}`);
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") navigateSearch();

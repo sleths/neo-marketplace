@@ -7,17 +7,6 @@
   flex-shrink: 0;
   position: relative;
   border: 1px solid var(--med-gray);
-
-  & p {
-    color: var(--dark-gray);
-    font-size: 14px;
-    line-height: 2.25;
-    margin-top: 0.75rem;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid var(--med-gray);
-    border-bottom: 1px solid var(--med-gray);
-  }
 }
 
 .container .nft {
@@ -31,6 +20,7 @@
 
 .btn a {
   justify-content: center;
+  margin: 1rem 0;
 }
 
 .glitch {

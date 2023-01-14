@@ -11,7 +11,6 @@ const NotFoundContainer = () => {
       <section className={`center ${styles.container}`}>
         <img className={styles.nft} src={errorImg} alt="Page Not Found" />
         <UserTitle to="#">Not Found</UserTitle>
-        <p>by you</p>
         <div className={`center ${styles.btn}`}>
           <NavigateButton to="/">Home</NavigateButton>
         </div>
