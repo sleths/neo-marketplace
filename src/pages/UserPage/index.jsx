@@ -26,11 +26,7 @@ const UserPage = () => {
   const handleTagSelect = ({ target }) =>
     setActiveKey(target.innerText.toLowerCase());
 
-  /* console.log(user.nfts.filter((nft) => nft.tags.includes(activeKey))); */
-
-  useEffect(() => console.log(selectiveNFTs), [selectiveNFTs]);
-
-  useEffect(
+    useEffect(
     () =>
       setSelectiveNFTs(user.nfts.filter((nft) => nft.tags.includes(activeKey))),
     [activeKey]

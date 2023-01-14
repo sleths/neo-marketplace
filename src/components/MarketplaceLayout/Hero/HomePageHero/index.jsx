@@ -12,6 +12,10 @@ const HomePageHero = () => {
 
   const navigateSearch = () => navigate(`search/${search}`);
 
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") navigateSearch();
+  };
+
   return (
     <header className={`center ${styles.hero}`}>
       <article className="center max-width">
@@ -26,6 +30,7 @@ const HomePageHero = () => {
             id="search"
             value={search}
             onChange={handleChange}
+            onKeyDown={handleKeyDown}
             autoComplete="off"
           />
           <label

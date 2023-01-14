@@ -1,25 +1,24 @@
 import { useParams } from "react-router-dom";
 
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
-
 import Layout from "../../components/MarketplaceLayout/Layout";
 
 import PageTitle from "../../components/Typography/PageTitle";
 
 import DropContainer from "../../components/Container/DropContainer";
 
-import { drops } from "../../data/index";
+import { drops, data } from "../../data/index";
 
 import styles from "./styles.module.scss";
-import { useState } from "react";
 
 const SearchPage = () => {
   const { value } = useParams();
 
-  const [searched, setSearched] = useState(
-    drops.filter((item) =>
-      item.name.toLowerCase().includes(value.toLowerCase())
-    )
+  const nfts = data.map((x) => x.user.nfts).flat(1);
+
+  const allData = [...nfts, ...drops];
+
+  const searched = allData.filter((item) =>
+    item.title.toLowerCase().includes(value.toLowerCase())
   );
 
   return (
