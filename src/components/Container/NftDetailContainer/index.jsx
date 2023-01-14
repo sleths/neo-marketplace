@@ -78,7 +78,7 @@ const NftDetailContainer = ({ nft }) => {
             <div>
               <h6>Current bid</h6>
               <p>
-                <strong>{`$${bid.toFixed(2)}`}</strong>
+                <strong>{`$${parseFloat(bid).toFixed(2)}`}</strong>
               </p>
             </div>
             <div>
